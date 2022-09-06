@@ -48,11 +48,11 @@ async function getQuotes() {
 	mountSpinner();
 	const apiUrl = 'https://type.fit/api/quotes';
 	try {
-		const response = await fetch(apiUrl);
-		apiQuotes = await response.json();
+		const response = await fetch(apiUrl); // Fetch request. The Responce variable will not be populated until it has some data fetched from our API
+		apiQuotes = await response.json();// We are getting json from respose and we are turning that response into JSON object . And we pass that into our global variable. 
 		newQuote();
-	} catch (error) {
-		// Catch Error Here
+	} catch (error) { // Handles Error
+		// Catch Error Here     
 	}
 }
 
