@@ -58,8 +58,8 @@ async function getQuotes() {
 
 // Tweet Quote
 function tweetQuote() {
-	const twitterUrl = `https://twitter.com/intent/tweet?text=${quoteText.innerText} - ${authorText.innerText}`;
-	window.open(twitterUrl, '_blank');
+	const twitterUrl = `https://twitter.com/intent/tweet?text=${quoteText.innerText} - ${authorText.innerText}`; //? mark means we have queru running
+	window.open(twitterUrl, '_blank'); //it allows to open twitter using URL
 }
 
 // Event Listeners
