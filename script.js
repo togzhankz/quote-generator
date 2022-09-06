@@ -68,3 +68,5 @@ twitterBtn.addEventListener('click', tweetQuote); /// we click and it tweets the
 
 // On Load
 getQuotes();
+
+loading ()
