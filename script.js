@@ -70,3 +70,5 @@ twitterBtn.addEventListener('click', tweetQuote); /// we click and it tweets the
 getQuotes();
 
 loading ()
+
+
