@@ -53,3 +53,5 @@ const string_check = (str1) => {
   console.log(string_check("Python"));
   console.log(string_check("thon"));
 
+//Write a JavaScript program to remove a character at the specified position of a given string and return the new string.
+
