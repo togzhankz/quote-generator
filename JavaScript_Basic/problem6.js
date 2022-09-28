@@ -42,16 +42,41 @@
 //Write a JavaScript program to create a new string adding "Py" in front of a given string. 
 //If the given string begins with "Py" then return the original string.
 
-const string_check = (str1) => {
-    if (str1 === null || str1 === undefined || str1.substring(0, 2) === 'Py') 
-    {
-      return str1;
-    }
-    return `Py${str1}`;
-  }
+// const string_check = (str1) => {
+//     if (str1 === null || str1 === undefined || str1.substring(0, 2) === 'Py') 
+//     {
+//       return str1;
+//     }
+//     return `Py${str1}`;
+//   }
   
-  console.log(string_check("Python"));
-  console.log(string_check("thon"));
+//   console.log(string_check("Python"));
+//   console.log(string_check("thon"));
 
 //Write a JavaScript program to remove a character at the specified position of a given string and return the new string.
 
+// function remove_character(str, char_pos) 
+//  {
+//   part1 = str.substring(0, char_pos);   
+//   part2 = str.substring(char_pos + 1, str.length);
+//   return (part1 + part2);
+//  }
+
+// console.log(remove_character("Python",0));
+// console.log(remove_character("Python",3));
+// console.log(remove_character("Python",5));
+
+//Write a JavaScript program to create a new string from a given string changing the position of first and last characters. 
+//The string length must be greater than or equal to 1
+
+// const firstLast = (str1) => {
+//   if (str1.length <= 1) return str1
+//   else {
+//     midString = str1.substring(1, str1.length-1)
+//     return  str1.charAt(str1.length-1) + midString + str1.charAt(0)
+// }
+// }
+
+// console.log(firstLast("togzhan")) 
+
+//
