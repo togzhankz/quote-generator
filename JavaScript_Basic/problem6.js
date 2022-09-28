@@ -79,4 +79,46 @@
 
 // console.log(firstLast("togzhan")) 
 
-//
+//Write a JavaScript program to create a new string from a given string with the first character
+// of the given string added at the front and back.
+
+// const frontBack = (str) => {
+//   const firstChar = str.substring(0,1)
+//   return (firstChar + str + firstChar)
+// }
+
+// console.log(frontBack("sle"))
+
+//Write a JavaScript program to check whether a given positive number is a multiple of 3 or a multiple of 7.
+
+// const chechFunction = (num1) =>  {
+//   if (num1<0)return ("Enter positive number")
+//   else {
+//     if (num1%3 === 0||num1%7 === 0) return ("number is a multiple of 3 or a multiple of 7")
+//     else return ("number is not  a multiple of 3 or a multiple of 7")
+//   }
+// }
+
+// console.log(chechFunction(-7))
+//Write a JavaScript program to check whether a string starts with 'Java' and false otherwise
+
+// const checkFunction = (string) =>{
+//   const begins = string.substring(0,4)
+//   if (begins === "Java") return true
+//   else return false
+// }
+
+// console.log(checkFunction("Javaddddript"))
+
+//Write a JavaScript program to find the largest of three given integers.
+
+// const checkFunction = (num1,num2,num3) => {
+//   if (num1 > num2 && num1>num3) return num1
+//   else if (num2 > num1 && num2 > num3) return num2
+//   else return num3
+// }
+
+// console.log(checkFunction(4,8,9))
+
+
+ 
