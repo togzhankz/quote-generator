@@ -31,7 +31,7 @@
 
 // checkFunction3("TOGZHAN")
 
-//41. Write a JavaScript program to check three given numbers, 
+//41. Write a JavaScript program to check three given numbers,
 //if the three numbers are same return 30 otherwise return 20 and if two numbers are same return 40.
 
 // const checkFunction4 = (num1,num2,num3)=>{
@@ -42,12 +42,83 @@
 
 // console.log(checkFunction4(20,20,20))
 
-
-//44. Write a JavaScript program to check from three given integers that whether a number is 
+//44. Write a JavaScript program to check from three given integers that whether a number is
 //greater than or equal to 20 and less than one of the others.
 
+// const checkFunction5 = (num1,num2,num3) => {
+//     if (num1 >= 20 && (num1 < num2 || num1 < num3) )return num1
+//     else if (num2 >= 20 && (num2 < num1 || num2 < num3) ) return num2
+//     else if (num3 >= 20 && (num3 < num1 || num3 < num2) ) return num3
+//     else return false
+// }
+
+// console.log(checkFunction5(21,19,19))
+
 //48. Write a JavaScript program to reverse a given string.
+// const checkFunction6 = (string) => {
+
+//     const array = string.split("").reverse().join("")
+//     console.log(array)
+// }
+
+// checkFunction6("togzhan")
+
 //49. Write a JavaScript program to replace every character in a given string with the character following it in the alphabet.
+
+const checkFunction7 = (string) => {
+  const alphabetArray = [
+    "A",
+    "B",
+    "C",
+    "D",
+    "E",
+    "F",
+    "G",
+    "H",
+    "I",
+    "J",
+    "K",
+    "L",
+    "M",
+    "N",
+    "O",
+    "P",
+    "Q",
+    "R",
+    "S",
+    "T",
+    "U",
+    "V",
+    "W",
+    "X",
+    "Y",
+    "Z",
+    "A",
+  ];
+  const upperString = string.toUpperCase();
+  const stringArray = upperString.split("");
+  let finalString = "";
+
+  const valid = stringArray.every((letter) => {
+    return alphabetArray.includes(letter);
+  });
+
+  if (!valid) {
+    console.log("Enter a string with letters");
+    return;
+  }
+
+  stringArray.forEach((letter) => {
+    const index = alphabetArray.indexOf(letter);
+    const next = alphabetArray[index + 1];
+    finalString = finalString + next;
+  });
+
+  console.log(finalString);
+};
+
+checkFunction7("Togzhan");
+
 //50. Write a JavaScript program to capitalize the first letter of each word of a given string.
 //51. Write a JavaScript program to convert a given number to hours and minutes.
 //52. Write a JavaScript program to convert the letters of a given string in alphabetical order.
