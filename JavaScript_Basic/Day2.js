@@ -65,60 +65,82 @@
 
 //49. Write a JavaScript program to replace every character in a given string with the character following it in the alphabet.
 
-const checkFunction7 = (string) => {
-  const alphabetArray = [
-    "A",
-    "B",
-    "C",
-    "D",
-    "E",
-    "F",
-    "G",
-    "H",
-    "I",
-    "J",
-    "K",
-    "L",
-    "M",
-    "N",
-    "O",
-    "P",
-    "Q",
-    "R",
-    "S",
-    "T",
-    "U",
-    "V",
-    "W",
-    "X",
-    "Y",
-    "Z",
-    "A",
-  ];
-  const upperString = string.toUpperCase();
-  const stringArray = upperString.split("");
-  let finalString = "";
+// const checkFunction7 = (string) => {
+//   const alphabetArray = [
+//     "A",
+//     "B",
+//     "C",
+//     "D",
+//     "E",
+//     "F",
+//     "G",
+//     "H",
+//     "I",
+//     "J",
+//     "K",
+//     "L",
+//     "M",
+//     "N",
+//     "O",
+//     "P",
+//     "Q",
+//     "R",
+//     "S",
+//     "T",
+//     "U",
+//     "V",
+//     "W",
+//     "X",
+//     "Y",
+//     "Z",
+//     "A",
+//   ];
+//   const upperString = string.toUpperCase();
+//   const stringArray = upperString.split("");
+//   let finalString = "";
 
-  const valid = stringArray.every((letter) => {
-    return alphabetArray.includes(letter);
-  });
+//   const valid = stringArray.every((letter) => {
+//     return alphabetArray.includes(letter);
+//   });
 
-  if (!valid) {
-    console.log("Enter a string with letters");
-    return;
-  }
+//   if (!valid) {
+//     console.log("Enter a string with letters");
+//     return;
+//   }
 
-  stringArray.forEach((letter) => {
-    const index = alphabetArray.indexOf(letter);
-    const next = alphabetArray[index + 1];
-    finalString = finalString + next;
-  });
+//   stringArray.forEach((letter) => {
+//     const index = alphabetArray.indexOf(letter);
+//     const next = alphabetArray[index + 1];
+//     finalString = finalString + next;
+//   });
 
-  console.log(finalString);
-};
+//   console.log(finalString);
+// };
 
-checkFunction7("Togzhan");
+// checkFunction7("Togzhan");
 
 //50. Write a JavaScript program to capitalize the first letter of each word of a given string.
+
+// const checkFunction8 = (string) => {
+//     const capitalizeString = string.charAt(0).toUpperCase()
+//     const theRest = string.substring(1,string.length)
+//     return (`${capitalizeString}${theRest}`)
+// }
+
+// console.log(checkFunction8("Yogzhan"));
+
 //51. Write a JavaScript program to convert a given number to hours and minutes.
+
+// const checkFunction9 = (seconds) => {
+//     const hours = Math.floor(seconds/3600)
+//     const residualSeconds = seconds%3600
+//     const minutes = Math.floor(residualSeconds/60)
+//     const residualSeconds2 = residualSeconds%60
+//     return (`${hours} hours ${minutes} minutes ${residualSeconds2} seconds`)
+// }
+
+// console.log(checkFunction9(50000))
+
 //52. Write a JavaScript program to convert the letters of a given string in alphabetical order.
+
+
