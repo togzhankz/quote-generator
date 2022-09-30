@@ -143,4 +143,5 @@
 
 //52. Write a JavaScript program to convert the letters of a given string in alphabetical order.
 
-
+const checkFunction10 = (string) =>  string.split("").sort().join("")
+console.log(checkFunction10("togzxhan"))
