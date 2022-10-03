@@ -1,6 +1,6 @@
 //JS Object
 
-// 1. Write a JavaScript program to list the properties of a JavaScript object. Go to the editor
+// 1. Write a JavaScript program to list the properties of a JavaScript object. 
 // Sample object:
 // var student = {
 // name : "David Rayy",
@@ -9,7 +9,7 @@
 // Sample Output: name,sclass,rollno
 
 
-// 2. Write a JavaScript program to delete the rollno property from the following object. Also print the object before or after deleting the property. Go to the editor
+// 2. Write a JavaScript program to delete the rollno property from the following object. Also print the object before or after deleting the property. 
 // Sample object:
 // var student = {
 // name : "David Rayy",
@@ -17,7 +17,7 @@
 // rollno : 12 };
 
 
-// 3. Write a JavaScript program to get the length of a JavaScript object. Go to the editor
+// 3. Write a JavaScript program to get the length of a JavaScript object. 
 // Sample object :
 // var student = {
 // name : "David Rayy",
@@ -25,7 +25,7 @@
 // rollno : 12 };
 
 
-// 4. Write a JavaScript program to display the reading status (i.e. display book name, author name and reading status) of the following books. Go to the editor
+// 4. Write a JavaScript program to display the reading status (i.e. display book name, author name and reading status) of the following books. 
 
 // var library = [ 
 //    {
@@ -45,23 +45,23 @@
 //    }];
 
 
-// 5. Write a JavaScript program to get the volume of a Cylinder with four decimal places using object classes. Go to the editor
+// 5. Write a JavaScript program to get the volume of a Cylinder with four decimal places using object classes. 
 // Volume of a cylinder : V = πr2h
 // where r is the radius and h is the height of the cylinder.
 
 
-// 6. Write a Bubble Sort algorithm in JavaScript. Go to the editor
+// 6. Write a Bubble Sort algorithm in JavaScript. 
 // Note : Bubble sort is a simple sorting algorithm that works by repeatedly stepping through the list to be sorted,
 // Sample Data: [6,4,0, 3,-2,1]
 // Expected Output : [-2, 0, 1, 3, 4, 6]
 
 
-// 7. Write a JavaScript program which returns a subset of a string. Go to the editor
+// 7. Write a JavaScript program which returns a subset of a string. 
 // Sample Data: dog
 // Expected Output: ["d", "do", "dog", "o", "og", "g"]
 
 
-// 8. Write a JavaScript program to create a Clock. Go to the editor
+// 8. Write a JavaScript program to create a Clock. 
 // Note: The output will come every second.
 // Expected Console Output :
 // "14:37:42"
@@ -72,11 +72,11 @@
 // "14:37:47"
 
 
-// 9. Write a JavaScript program to calculate the area and perimeter of a circle. Go to the editor
+// 9. Write a JavaScript program to calculate the area and perimeter of a circle. 
 // Note : Create two methods to calculate the area and perimeter. The radius of the circle will be supplied by the user.
 
 
-// 10. Write a JavaScript program to sort an array of JavaScript objects. Go to the editor
+// 10. Write a JavaScript program to sort an array of JavaScript objects. 
 // Sample Object :
 
 // var library = [ 
@@ -112,28 +112,28 @@
 // }]
 
 
-// 11. Write a JavaScript function to print all the methods in an JavaScript object. Go to the editor
+// 11. Write a JavaScript function to print all the methods in an JavaScript object. 
 // Test Data :
 // console.log(all_properties(Array));
 // ["length", "name", "arguments", "caller", "prototype", "isArray", "observe", "unobserve"]
 
 
-// 12. Write a JavaScript function to parse an URL. Go to the editor
+// 12. Write a JavaScript function to parse an URL. 
 
 
-// 13. Write a JavaScript function to retrieve all the names of object's own and inherited properties. Go to the editor
+// 13. Write a JavaScript function to retrieve all the names of object's own and inherited properties. 
 
 
-// 14. Write a JavaScript function to retrieve all the values of an object's properties. Go to the editor
+// 14. Write a JavaScript function to retrieve all the values of an object's properties. 
 
 
-// 15. Write a JavaScript function to convert an object into a list of `[key, value]` pairs. Go to the editor
+// 15. Write a JavaScript function to convert an object into a list of `[key, value]` pairs. 
 
 
-// 16. Write a JavaScript function to get a copy of the object where the keys have become the values and the values the keys. Go to the editor
+// 16. Write a JavaScript function to get a copy of the object where the keys have become the values and the values the keys. 
 
 
-// 17. Write a JavaScript function to check whether an object contains given property. Go to the editor
+// 17. Write a JavaScript function to check whether an object contains given property. 
 
 
-// 18. Write a JavaScript function to check whether a given value is a DOM element. Go to the editor
+// 18. Write a JavaScript function to check whether a given value is a DOM element. 

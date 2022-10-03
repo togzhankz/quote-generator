@@ -1,6 +1,6 @@
 //JS date
 
-// 1. Write a JavaScript function to check whether an `input` is a date object or not. Go to the editor
+// 1. Write a JavaScript function to check whether an `input` is a date object or not. 
 
 // Test Data :
 // console.log(is_date("October 13, 2014 11:13:00"));
@@ -15,7 +15,7 @@
 
 
 
-// 2. Write a JavaScript function to get the current date. Go to the editor
+// 2. Write a JavaScript function to get the current date. 
 
 // Note : Pass a separator as an argument.
 // Test Data :
@@ -27,7 +27,7 @@
 
 
 
-// 3. Write a JavaScript function to get the number of days in a month. Go to the editor
+// 3. Write a JavaScript function to get the number of days in a month. 
 
 // Test Data :
 // console.log(getDaysInMonth(1, 2012));
@@ -42,7 +42,7 @@
 
 
 
-// 4. Write a JavaScript function to get the month name from a particular date. Go to the editor
+// 4. Write a JavaScript function to get the month name from a particular date. 
 
 // Test Data :
 // console.log(month_name(new Date("10/11/2009")));
@@ -53,7 +53,7 @@
 
 
 
-// 5. Write a JavaScript function to compare dates (i.e. greater than, less than or equal to). Go to the editor
+// 5. Write a JavaScript function to compare dates (i.e. greater than, less than or equal to). 
 
 // Test Data :
 // console.log(compare_dates(new Date('11/14/2013 00:00'), new Date('11/14/2013 00:00')));
@@ -66,7 +66,7 @@
 
 
 
-// 6. Write a JavaScript function to add specified minutes to a Date object. Go to the editor
+// 6. Write a JavaScript function to add specified minutes to a Date object. 
 
 // Test Data :
 // console.log(add_minutes(new Date(2014,10,2), 30).toString());
@@ -75,7 +75,7 @@
 
 
 
-// 7. Write a JavaScript function to test whether a date is a weekend. Go to the editor
+// 7. Write a JavaScript function to test whether a date is a weekend. 
 
 // Note : Use standard Saturday/Sunday definition of a weekend.
 // Test Data :
@@ -89,7 +89,7 @@
 
 
 
-// 8. Write a JavaScript function to get difference between two dates in days. Go to the editor
+// 8. Write a JavaScript function to get difference between two dates in days. 
 
 // Test Data :
 // console.log(date_diff_indays('04/02/2014', '11/04/2014'));
@@ -100,7 +100,7 @@
 
 
 
-// 9. Write a JavaScript function to get the last day of a month. Go to the editor
+// 9. Write a JavaScript function to get the last day of a month. 
 
 // Test Data :
 // console.log(lastday(2014,0));
@@ -113,7 +113,7 @@
 
 
 
-// 10. Write a JavaScript function to calculate 'yesterday day'. Go to the editor
+// 10. Write a JavaScript function to calculate 'yesterday day'. 
 
 // Test Data :
 // console.log(yesterday('Nov 15, 2014'));
@@ -126,7 +126,7 @@
 
 
 
-// 11. Write a JavaScript function to get the maximum date from an array of dates. Go to the editor
+// 11. Write a JavaScript function to get the maximum date from an array of dates. 
 
 // Test Data :
 // console.log(max_date(['2015/02/01', '2015/02/02', '2015/01/03']));
@@ -135,7 +135,7 @@
 
 
 
-// 12. Write a JavaScript function to get the minimum date from an array of dates. Go to the editor
+// 12. Write a JavaScript function to get the minimum date from an array of dates. 
 
 // Test Data :
 // console.log(min_date(['2015/02/01', '2015/02/02', '2015/01/03']));
@@ -144,7 +144,7 @@
 
 
 
-// 13. Write a JavaScript function that will return the number of minutes in hours and minutes. Go to the editor
+// 13. Write a JavaScript function that will return the number of minutes in hours and minutes. 
 
 // Test Data :
 // console.log(timeConvert(200));
@@ -153,7 +153,7 @@
 
 
 
-// 14. Write a JavaScript function to get the amount of days of a year. Go to the editor
+// 14. Write a JavaScript function to get the amount of days of a year. 
 
 // Test Data :
 // console.log(days_of_a_year(2015));
@@ -163,7 +163,7 @@
 
 
 
-// 15. Write a JavaScript function to get the quarter (1 to 4) of the year. Go to the editor
+// 15. Write a JavaScript function to get the quarter (1 to 4) of the year. 
 
 // Test Data :
 // console.log(quarter_of_the_year(new Date(2015, 1, 21)));
@@ -173,7 +173,7 @@
 
 
 
-// 16. Write a JavaScript function to count the number of days passed since beginning of the year. Go to the editor
+// 16. Write a JavaScript function to count the number of days passed since beginning of the year. 
 
 // Test Data :
 // console.log(days_passed(new Date(2015, 0, 15)));
@@ -183,7 +183,7 @@
 
 
 
-// 17. Write a JavaScript function to convert a Unix timestamp to time. Go to the editor
+// 17. Write a JavaScript function to convert a Unix timestamp to time. 
 
 // Test Data :
 // console.log(days_passed(new Date(2015, 0, 15)));
@@ -193,7 +193,7 @@
 
 
 
-// 18. Write a JavaScript program to calculate age. Go to the editor
+// 18. Write a JavaScript program to calculate age. 
 
 // Test Data :
 // console.log(calculate_age(new Date(1982, 11, 4)));
@@ -203,7 +203,7 @@
 
 
 
-// 19. Write a JavaScript function to get the day of the month, 2 digits with leading zeros. Go to the editor
+// 19. Write a JavaScript function to get the day of the month, 2 digits with leading zeros. 
 // Test Data :
 // d= new Date(2015, 10, 1);
 // console.log(day_of_the_month(d));
@@ -211,7 +211,7 @@
 
 
 
-// 20. Write a JavaScript function to get a textual representation of a day (three letters, Mon through Sun). Go to the editor
+// 20. Write a JavaScript function to get a textual representation of a day (three letters, Mon through Sun). 
 // Test Data :
 // dt = new Date(2015, 10, 1);
 // console.log(short_Days(dt));
@@ -219,7 +219,7 @@
 
 
 
-// 21. Write a JavaScript function to get a full textual representation of the day of the week (Sunday through Saturday). Go to the editor
+// 21. Write a JavaScript function to get a full textual representation of the day of the week (Sunday through Saturday). 
 // Test Data :
 // dt = new Date(2015, 10, 1);
 // console.log(long_Days(dt));
@@ -227,7 +227,7 @@
 
 
 
-// 22. Write a JavaScript function to get ISO-8601 numeric representation of the day of the week (1 (for Monday) to 7 (for Sunday)). Go to the editor
+// 22. Write a JavaScript function to get ISO-8601 numeric representation of the day of the week (1 (for Monday) to 7 (for Sunday)). 
 // Test Data :
 // dt = new Date(2015, 10, 1);
 // console.log(ISO_numeric_date(dt));
@@ -235,7 +235,7 @@
 
 
 
-// 23. Write a JavaScript function to get English ordinal suffix for the day of the month, 2 characters (st, nd, rd or th.). Go to the editor
+// 23. Write a JavaScript function to get English ordinal suffix for the day of the month, 2 characters (st, nd, rd or th.). 
 // Test Data :
 // dt = new Date(2015, 10, 1);
 // console.log(english_ordinal_suffix(dt));
@@ -243,7 +243,7 @@
 
 
 
-// 24. Write a JavaScript function to get ISO-8601 week number of year, weeks starting on Monday. Go to the editor
+// 24. Write a JavaScript function to get ISO-8601 week number of year, weeks starting on Monday. 
 // Example : 42 (the 42nd week in the year)
 // Test Data :
 // dt = new Date(2015, 10, 1);
@@ -252,7 +252,7 @@
 
 
 
-// 25. Write a JavaScript function to get a full textual representation of a month, such as January or June. Go to the editor
+// 25. Write a JavaScript function to get a full textual representation of a month, such as January or June. 
 // Test Data :
 // dt = new Date(2015, 10, 1);
 // console.log(full_month(dt));
@@ -260,7 +260,7 @@
 
 
 
-// 26. Write a JavaScript function to get a numeric representation of a month, with leading zeros (01 through 12). Go to the editor
+// 26. Write a JavaScript function to get a numeric representation of a month, with leading zeros (01 through 12). 
 // Test Data :
 // dt = new Date(2015, 10, 1);
 // console.log(numeric_month(dt));
@@ -268,7 +268,7 @@
 
 
 
-// 27. Write a JavaScript function to get a short textual representation of a month, three letters (Jan through Dec). Go to the editor
+// 27. Write a JavaScript function to get a short textual representation of a month, three letters (Jan through Dec). 
 // Test Data :
 // dt = new Date(2015, 10, 1);
 // console.log(short_months(dt));
@@ -276,7 +276,7 @@
 
 
 
-// 28. Write a JavaScript function to get a full numeric representation of a year (4 digits). Go to the editor
+// 28. Write a JavaScript function to get a full numeric representation of a year (4 digits). 
 // Test Data :
 // dt = new Date(2015, 10, 1);
 // console.log(full_year(dt));
@@ -284,7 +284,7 @@
 
 
 
-// 29. Write a JavaScript function to get a two digit representation of a year. Go to the editor
+// 29. Write a JavaScript function to get a two digit representation of a year. 
 // Examples : 79 or 04
 // Test Data :
 // dt = new Date(1989, 10, 1);
@@ -293,14 +293,14 @@
 
 
 
-// 30. Write a JavaScript function to get lowercase Ante meridiem and Post meridiem. Go to the editor
+// 30. Write a JavaScript function to get lowercase Ante meridiem and Post meridiem. 
 
 
-// 31. Write a JavaScript function to get uppercase Ante meridiem and Post meridiem. Go to the editor
+// 31. Write a JavaScript function to get uppercase Ante meridiem and Post meridiem. 
 
 
 
-// 32. Write a JavaScript function to swatch Internet time (000 through 999). Go to the editor
+// 32. Write a JavaScript function to swatch Internet time (000 through 999). 
 // Test Data :
 // dt = new Date(1989, 10, 1);
 // console.log(internet_time(dt));
@@ -308,7 +308,7 @@
 
 
 
-// 33. Write a JavaScript function to get 12-hour format of an hour with leading zeros. Go to the editor
+// 33. Write a JavaScript function to get 12-hour format of an hour with leading zeros. 
 // Test Data :
 // dt = new Date(1989, 10, 1);
 // console.log(hours_with_zeroes(dt));
@@ -316,7 +316,7 @@
 
 
 
-// 34. Write a JavaScript function to get 24-hour format of an hour without leading zeros. Go to the editor
+// 34. Write a JavaScript function to get 24-hour format of an hour without leading zeros. 
 // Test Data :
 // dt = new Date(1989, 10, 1);
 // console.log(hours_without_zeroes(dt));
@@ -324,7 +324,7 @@
 
 
 
-// 35. Write a JavaScript function to get minutes with leading zeros (00 to 59). Go to the editor
+// 35. Write a JavaScript function to get minutes with leading zeros (00 to 59). 
 // Test Data :
 // dt = new Date(1989, 10, 1);
 // console.log(minutes_with_leading_zeros(dt));
@@ -332,7 +332,7 @@
 
 
 
-// 36. Write a JavaScript function to get seconds with leading zeros (00 through 59). Go to the editor
+// 36. Write a JavaScript function to get seconds with leading zeros (00 through 59). 
 // Test Data :
 // dt = new Date(1989, 10, 1);
 // console.log(seconds_with_leading_zeros(dt));
@@ -340,14 +340,14 @@
 
 
 
-// 37. Write a JavaScript function to get Timezone. Go to the editor
+// 37. Write a JavaScript function to get Timezone. 
 // Test Data :
 // dt = new Date();
 // console.log(seconds_with_leading_zeros(dt));
 // "India Standard Time"
 
 
-// 38. Write a JavaScript function to find whether or not the date is in daylights savings time. Go to the editor
+// 38. Write a JavaScript function to find whether or not the date is in daylights savings time. 
 // Test Data :
 // dt = new Date();
 // console.log(daylights_savings(dt));
@@ -355,7 +355,7 @@
 
 
 
-// 39. Write a JavaScript function to get difference to Greenwich time (GMT) in hours. Go to the editor
+// 39. Write a JavaScript function to get difference to Greenwich time (GMT) in hours. 
 // Test Data :
 // dt = new Date();
 // console.log(diff_to_GMT(dt));
@@ -363,7 +363,7 @@
 
 
 
-// 40. Write a JavaScript function to get timezone offset in seconds. Go to the editor
+// 40. Write a JavaScript function to get timezone offset in seconds. 
 // Note : The offset for timezones west of UTC is always negative, and for those east of UTC is always positive.
 // Test Data :
 // dt = new Date();
@@ -372,7 +372,7 @@
 
 
 
-// 41. Write a JavaScript function to add specified years to a date. Go to the editor
+// 41. Write a JavaScript function to add specified years to a date. 
 // Test Data :
 // dt = new Date(2014,10,2);
 // console.log(add_years(dt, 10).toString());
@@ -381,7 +381,7 @@
 
 
 
-// 42. Write a JavaScript function to add specified weeks to a date. Go to the editor
+// 42. Write a JavaScript function to add specified weeks to a date. 
 // Test Data :
 // dt = new Date(2014,10,2);
 // console.log(add_weeks(dt, 10).toString());
@@ -390,7 +390,7 @@
 
 
 
-// 43. Write a JavaScript function to add specified months to a date. Go to the editor
+// 43. Write a JavaScript function to add specified months to a date. 
 // Test Data :
 // dt = new Date(2014,10,2);
 // console.log(add_months(dt, 10).toString());
@@ -399,7 +399,7 @@
 
 
 
-// 44. Write a JavaScript function to get time differences in minutes between two dates. Go to the editor
+// 44. Write a JavaScript function to get time differences in minutes between two dates. 
 // Test Data :
 // dt1 = new Date("October 13, 2014 11:11:00");
 // dt2 = new Date("October 13, 2014 11:13:00");
@@ -408,7 +408,7 @@
 
 
 
-// 45. Write a JavaScript function to get time differences in hours between two dates. Go to the editor
+// 45. Write a JavaScript function to get time differences in hours between two dates. 
 // Test Data :
 // dt1 = new Date("October 13, 2014 08:11:00");
 // dt2 = new Date("October 13, 2014 11:13:00");
@@ -417,7 +417,7 @@
 
 
 
-// 46. Write a JavaScript function to get time differences in days between two dates. Go to the editor
+// 46. Write a JavaScript function to get time differences in days between two dates. 
 // Test Data :
 // dt1 = new Date("October 13, 2014 08:11:00");
 // dt2 = new Date("October 19, 2014 11:13:00");
@@ -426,7 +426,7 @@
 
 
 
-// 47. Write a JavaScript function to get time differences in weeks between two dates. Go to the editor
+// 47. Write a JavaScript function to get time differences in weeks between two dates. 
 // Test Data :
 // dt1 = new Date("June 13, 2014 08:11:00");
 // dt2 = new Date("October 19, 2014 11:13:00");
@@ -435,7 +435,7 @@
 
 
 
-// 48. Write a JavaScript function to get time differences in months between two dates. Go to the editor
+// 48. Write a JavaScript function to get time differences in months between two dates. 
 // Test Data :
 // dt1 = new Date("June 13, 2014 08:11:00");
 // dt2 = new Date("October 19, 2014 11:13:00");
@@ -444,7 +444,7 @@
 
 
 
-// 49. Write a JavaScript function to get time differences in years between two dates. Go to the editor
+// 49. Write a JavaScript function to get time differences in years between two dates. 
 // Test Data :
 // dt1 = new Date("June 13, 2014 08:11:00");
 // dt2 = new Date("October 19, 2017 11:13:00");
@@ -453,13 +453,13 @@
 
 
 
-// 50. Write a JavaScript function to get the week start date. Go to the editor
+// 50. Write a JavaScript function to get the week start date. 
 
 
-// 51. Write a JavaScript function to get the week end date. Go to the editor
+// 51. Write a JavaScript function to get the week end date. 
 
 
-// 52. Write a JavaScript function to get the month start date. Go to the editor
+// 52. Write a JavaScript function to get the month start date. 
 
 
-// 53. Write a JavaScript function to get the month end date. Go to the editor
+// 53. Write a JavaScript function to get the month end date. 
