@@ -1,19 +1,29 @@
 // 53. Write a JavaScript program to check whether the characters
 //a and b are separated by exactly 3 places anywhere (at least once) in a given string.
 
-const checkFunction = (string) => {
-  const myArray = string.split("");
-  for (let i = 0; i < myArray.length; i++) {
-    if (myArray[i] === "a" && myArray[i + 4] === "b") 
-    const convertedString = myArray.join()
-    return true;
-    else return false;
-  }
-};
+// const checkFunction = (string) => {
+//   const myArray = string.split("");
+//   for (let i = 0; i < myArray.length; i++) {
+//     if (myArray[i] === "a" && myArray[i + 4] === "b") 
+//     console.log("True");
+//     else console.log("False")
+//   }
+// };
 
-console.log(checkFunction("Myrrafyb"));
+// checkFunction("Myrrafyb");
+
+const ab_Check=(str) =>
+ {
+    return (/a...b/).test(str) || (/b...a/).test(str);
+ }
+
+console.log(ab_Check("Chainsbreak"));
+console.log(ab_Check("pane borrowed"));
+console.log(ab_Check("abCheck"));
 
 // 54. Write a JavaScript program to count the number of vowels in a given string.
+
+
 
 // 55. Write a JavaScript program to check whether a given string contains equal number of p's and t's.
 
