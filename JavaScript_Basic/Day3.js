@@ -19,11 +19,29 @@ const ab_Check=(str) =>
 
 console.log(ab_Check("Chainsbreak"));
 console.log(ab_Check("pane borrowed"));
-console.log(ab_Check("abCheck"));
+
 
 // 54. Write a JavaScript program to count the number of vowels in a given string.
 
 
+const vowels = ["a","e","i","o","u","y"]
+const checkVowel = (string) => 
+{
+  let count = 0
+  for (let letter of string.toLowerCase()) {
+    if (vowels.includes(letter)) {
+        count++;
+    }
+}
+return count
+
+}
+console.log(checkVowel("tpgeeen"))
+
+
+// program to count the number of vowels in a string
+
+// defining vowels
 
 // 55. Write a JavaScript program to check whether a given string contains equal number of p's and t's.
 
