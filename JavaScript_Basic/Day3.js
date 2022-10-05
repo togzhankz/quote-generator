@@ -39,19 +39,68 @@ return count
 console.log(checkVowel("tpgeeen"))
 
 
-// program to count the number of vowels in a string
-
-// defining vowels
 
 // 55. Write a JavaScript program to check whether a given string contains equal number of p's and t's.
+// const equalChars = (string) => 
+// {
+//   const arrayString = string.split("")
+//   count1 = 0
+//   count2 = 0
+//   for  (let i = 0; i < arrayString.length; i++){
+//     if (arrayString[i] === 'p'){
+//     count1 ++
+//     } else if ( arrayString[i] === 't'){
+//     count2++
+//         if(count1 === count2) return true
+//   } else {
+//     return false
+//   }
+// }
+// }
 
-// 56. Write a JavaScript program to divide two positive numbers and return a string with properly formatted commas.
+// console.log(equalChars("tttogzhanppp"))
 
-// 57. Write a JavaScript program to create a new string of specified copies (positive number) of a given string.
 
-// 58. Write a JavaScript program to create a new string of 4 copies of the last 3 characters of a given original string. The length of the given string must be 3 and above.
+
+
+
+// 56. Write a JavaScript program to divide two positive numbers and return a string with properly formatted commas.????
+
+const formatFunction = (n1,n2) => {
+  const result = Math.floor(n1/n2).toString()
+  const resultArray = result.split("")
+  return resultArray
+}
+console.log(formatFunction(4,3))
+
+// 57. Write a JavaScript program to create a new string of specified copies (positive number) of a given string.????
+
+const copyFunction = (string, num) => {
+    if(num<0)
+    return false
+    else
+    return string.repeat(num)
+}
+
+console.log(copyFunction("togzhan",2))
+
+
+// 58. Write a JavaScript program to create a new string of 4 copies of the last 3 characters of a given original string. 
+//The length of the given string must be 3 and above.
+
+const copyFunction2 = (string) => {
+  if (string.length < 4)
+  return false
+  else {
+  const lastThree = string.slice(-3).repeat(4)
+  return lastThree}
+}
+
+console.log(copyFunction2("togzhan"))
 
 // 59. Write a JavaScript program to extract the first half of a string of even length.
+
+
 
 // 60. Write a JavaScript program to create a new string without the first and last character of a given string.
 
