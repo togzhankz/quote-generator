@@ -124,6 +124,12 @@ console.log(newStringFunction("togzahn"))
 
 // 61. Write a JavaScript program to concatenate two strings except their first character.
 
+const concatFunction = (str1, str2)=>{
+  const concatString = str1.slice(1).concat(str2.slice(1))
+  return concatString
+}
+
+console.log(concatFunction("apple","banana"))
 // 62. Write a JavaScript program to move last three character to the start of a given string. The string length must be greater or equal to three.
 
 // 63. Write a JavaScript program to create a string using the middle three characters of a given string of odd length. The string length must be greater or equal to three.
