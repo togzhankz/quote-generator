@@ -100,8 +100,18 @@ console.log(copyFunction2("togzhan"))
 
 // 59. Write a JavaScript program to extract the first half of a string of even length.
 
+const halfString = (string)=> {
+  let x
+  if (string.length % 2 !== 0)
+  return false
+  else {
+     x = (string.length/2)
+  }
+  const extractString = string.substring(0, x)
+  return extractString
+}
 
-
+console.log(halfString("togzhana"))
 // 60. Write a JavaScript program to create a new string without the first and last character of a given string.
 
 // 61. Write a JavaScript program to concatenate two strings except their first character.
