@@ -130,8 +130,21 @@ const concatFunction = (str1, str2)=>{
 }
 
 console.log(concatFunction("apple","banana"))
-// 62. Write a JavaScript program to move last three character to the start of a given string. The string length must be greater or equal to three.
+// 62. Write a JavaScript program to move last three character to the start of a given string. 
+//The string length must be greater or equal to three.
 
+const  movethreeFunction = (string) => {
+  if (string.length<3)
+  return false
+  else {
+    const lastThree = string.slice(-3)
+    const leftOver = string.slice(0, -3)
+    return (`${lastThree}${leftOver}`)
+  }
+
+}
+
+console.log(movethreeFunction("togzhan"))
 // 63. Write a JavaScript program to create a string using the middle three characters of a given string of odd length. The string length must be greater or equal to three.
 
 // 64. Write a JavaScript program to concatenate two strings and return the result. If the length of the strings are not same then remove the characters from the longer string.
