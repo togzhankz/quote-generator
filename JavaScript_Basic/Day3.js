@@ -141,13 +141,19 @@ const  movethreeFunction = (string) => {
     const leftOver = string.slice(0, -3)
     return (`${lastThree}${leftOver}`)
   }
-
 }
 
-console.log(movethreeFunction("togzhan"))
-// 63. Write a JavaScript program to create a string using the middle three characters of a given string of odd length. The string length must be greater or equal to three.
 
-// 64. Write a JavaScript program to concatenate two strings and return the result. If the length of the strings are not same then remove the characters from the longer string.
+
+console.log(movethreeFunction("togzhan"))
+// 63. Write a JavaScript program to create a string using the middle three characters of a given string of odd length. 
+//The string length must be greater or equal to three.
+
+
+
+
+// 64. Write a JavaScript program to concatenate two strings and return the result. 
+//If the length of the strings are not same then remove the characters from the longer string.
 
 // 65. Write a JavaScript program to test whether a string end with "Script". The string length must be greater or equal to 6.
 
@@ -167,8 +173,15 @@ console.log(movethreeFunction("togzhan"))
 
 // 73. Write a JavaScript program to reverse the elements of a given array of integers length 3.
 
-// 74. Write a JavaScript program to find the larger value between the first or last and set all the other elements with that value. Display the new array.
+// 74. Write a JavaScript program to find the larger value between the first or last and set all the other elements with that value. 
+//Display the new array.
 
+
+
+
+
+
+// START AT 8PM : FINISH AT 12AM
 // 75. Write a JavaScript program to create a new array taking the middle elements of the two arrays of integer and each length 3.
 
 // 76. Write a JavaScript program to create a new array taking the first and last elements from a given array of integers and length must be greater or equal to 1.
