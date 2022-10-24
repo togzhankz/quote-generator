@@ -196,9 +196,36 @@ const test_los_new = (str) => {
 }
 console.log(test_los_new("Siettle"))
 
-// 67. Write a JavaScript program to create a new string from a given string, removing the first and last characters of the string if the first or last character are 'P'. Return the original string if the condition is not satisfied.
+// 67. Write a JavaScript program to create a new string from a given string, 
+//removing the first and last characters of the string if the first or last character are 'P'. 
+//Return the original string if the condition is not satisfied.
 
-// 68. Write a JavaScript program to create a new string using the first and last n characters from a given sting. The string length must be greater or equal to n.
+const new_string = (str)=> {
+  if(str.charAt(0)== "p"&& str.charAt(str.length-1)=="p" ){
+    new_str = str.slice(1, -1)
+    return new_str
+  }
+  else{
+    return "Condition is not satisfied"
+  }
+}
+
+console.log(new_string("pethiops"))
+
+
+// 68. Write a JavaScript program to create a new string using the first and last n characters from a given sting. 
+//The string length must be greater or equal to n.
+
+const new_string2 = (str,n) => {
+if(str.length >= n) {
+  new_str = str.slice(n, -n)
+  return new_str
+}
+else {
+  return false
+}
+}
+console.log(new_string2("togzhahahn",3))
 
 // 69. Write a JavaScript program to compute the sum of three elements of a given array of integers of length 3.
 
