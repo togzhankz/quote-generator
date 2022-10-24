@@ -267,9 +267,26 @@ else return false
 console.log(check_array_first_last(array2))
 
 // 73. Write a JavaScript program to reverse the elements of a given array of integers length 3.
+array3 = [1,2,3]
+ const reverse_array = (array3)=> {
+  new_array = array3.reverse()
+  return  new_array
+ }
 
+ console.log(reverse_array(array3))
 // 74. Write a JavaScript program to find the larger value between the first or last and set all the other elements with that value. 
 //Display the new array.
+
+array4 = [1,2,3,5]
+
+const max_value_array = (array4)=>{
+  max_value = Math.max(array4[0], array4[array4.length-1])
+  new_array = array4.fill(max_value)
+  return new_array
+}
+
+console.log(max_value_array(array4))
+
 
 
 
