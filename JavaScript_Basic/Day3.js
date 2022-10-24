@@ -148,14 +148,36 @@ const  movethreeFunction = (string) => {
 console.log(movethreeFunction("togzhan"))
 // 63. Write a JavaScript program to create a string using the middle three characters of a given string of odd length. 
 //The string length must be greater or equal to three.
-
+const middle_three = (str)=> {
+  if (str.length % 2!= 0) {
+  
+   mid = (str.length + 1)/2;
+   return str.slice(mid - 2, mid + 1);
+   }
+ return str;
+}
+console.log(middle_three('abcdefg'));
+console.log(middle_three('HTML5'));
+console.log(middle_three('Python'));
+console.log(middle_three('PHP'));
+console.log(middle_three('Exercises'));
 
 
 
 // 64. Write a JavaScript program to concatenate two strings and return the result. 
 //If the length of the strings are not same then remove the characters from the longer string.
 
+const str_con_cat = (str1, str2)=> {
+  const m = Math.min(str1.length, str2.length);
+
+  return str1.substring(str1.length - m) + str2.substring(str2.length - m);
+}
+
+console.log(str_con_cat("Python", "JS"));
+console.log(str_con_cat("ab", "cdef"));
+
 // 65. Write a JavaScript program to test whether a string end with "Script". The string length must be greater or equal to 6.
+
 
 // 66. Write a JavaScript program to display the city name if the string begins with "Los" or "New" otherwise return blank.
 
