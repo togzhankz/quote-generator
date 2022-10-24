@@ -229,7 +229,19 @@ console.log(new_string2("togzhahahn",3))
 
 // 69. Write a JavaScript program to compute the sum of three elements of a given array of integers of length 3.
 
+
+const sum_of_three = [2,32,2].reduce((array_element,a)=> array_element + a,0)
+
+console.log(sum_of_three)
+
+
 // 70. Write a JavaScript program to rotate the elements left of a given array of integers of length 3.
+const rotate_elements_left=(array)=>
+{
+    return [array[1], array[2], array[0]];
+}
+console.log(rotate_elements_left([3, 4, 5])); 
+
 
 // 71. Write a JavaScript program to check whether 1 appears in first or last position of a given array of integers. The array length must be greater or equal to 1.
 
