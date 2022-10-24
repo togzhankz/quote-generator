@@ -178,8 +178,23 @@ console.log(str_con_cat("ab", "cdef"));
 
 // 65. Write a JavaScript program to test whether a string end with "Script". The string length must be greater or equal to 6.
 
-
+const test_script = (str) => {
+  if (str.length >= 6 &&  str.endsWith("Script")){
+    return true
+  }else{
+    return false
+  }
+}
+console.log(test_script("JavaScript"))
 // 66. Write a JavaScript program to display the city name if the string begins with "Los" or "New" otherwise return blank.
+const test_los_new = (str) => {
+  if (str.startsWith("Los") || str.startsWith("New")){
+    return true
+  }else{
+    return false
+  }
+}
+console.log(test_los_new("Siettle"))
 
 // 67. Write a JavaScript program to create a new string from a given string, removing the first and last characters of the string if the first or last character are 'P'. Return the original string if the condition is not satisfied.
 
