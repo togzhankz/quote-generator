@@ -243,9 +243,28 @@ const rotate_elements_left=(array)=>
 console.log(rotate_elements_left([3, 4, 5])); 
 
 
-// 71. Write a JavaScript program to check whether 1 appears in first or last position of a given array of integers. The array length must be greater or equal to 1.
+// 71. Write a JavaScript program to check whether 1 appears in first or last position of a given array of integers.
+// The array length must be greater or equal to 1.
+
+array = [1,2,3,4]
+const check_array_position = (array)=>{
+  if(array.length >= 1 &&  array[0]== 1 ||  array[array.length-1] == 1){
+    return true
+  }
+else return false
+}
+
+console.log(check_array_position(array))
 
 // 72. Write a JavaScript program to check whether the first and last elements are equal of a given array of integers length 3.
+
+array2 = [6,2,3,4,6]
+const check_array_first_last = (array2)=> {
+  if (array2[0] === array2[array2.length-1]) return true
+
+else return false
+}
+console.log(check_array_first_last(array2))
 
 // 73. Write a JavaScript program to reverse the elements of a given array of integers length 3.
 
