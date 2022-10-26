@@ -339,8 +339,22 @@ const test_function_arr = (array)=>{
 console.log(test_function_arr([7,9]))
 // 79. Write a JavaScript program to test whether a given array of integers contains 30 and 40 twice. The array length should be 0, 1, or 2.
 
-// 80. Write a JavaScript program to swap the first and last elements of a given array of integers. The array length should be at least 1.
+const twice3040 = (array) =>{
+  let a  = array[0]
+  let b = array[1]
+  if((a === 30 && b === 30) ||(a === 40 && b === 40)) return true
+  else return false
+}
 
+console.log(twice3040([30,40]))
+// 80. Write a JavaScript program to swap the first and last elements of a given array of integers. The array length should be at least 1.
+const swap = (array) =>{
+  [array[0], array[array.length - 1]] = [array[array.length - 1], array[0]];
+  return array;
+}
+console.log(swap([1, 2, 3, 4]));  
+console.log(swap([0, 2, 1]));  
+console.log(swap([3])); 
 // 81. Write a JavaScript program to add two digits of a given positive integer of length two.
 
 // 82. Write a JavaScript to add two positive integers without carry.
