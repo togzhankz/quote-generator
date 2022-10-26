@@ -357,7 +357,28 @@ console.log(swap([0, 2, 1]));
 console.log(swap([3])); 
 // 81. Write a JavaScript program to add two digits of a given positive integer of length two.
 
+const addDigits = (int)=> {
+  return int%10 + Math.floor(int/10)
+}
+
+console.log(addDigits(23))
+
 // 82. Write a JavaScript to add two positive integers without carry.
+
+const add_without_carry = (int1,int2)=>{
+  let result = 0;
+  let x = 1;
+  while (int1 > 0 && int2 > 0) {
+      result += x * ((int1 + int2) % 10);
+      int1 = Math.floor(int1 / 10);
+      int2 = Math.floor(int2 / 10);
+      x*= 10;
+  }
+  return result;
+}
+console.log(add_without_carry(222, 911))
+console.log(add_without_carry(200, 900))
+
 
 // 83. Write a JavaScript to find the longest string from a given array of strings.
 
