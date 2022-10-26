@@ -296,9 +296,34 @@ console.log(max_value_array(array4))
 // START AT 8PM : FINISH AT 12AM
 // 75. Write a JavaScript program to create a new array taking the middle elements of the two arrays of integer and each length 3.
 
-// 76. Write a JavaScript program to create a new array taking the first and last elements from a given array of integers and length must be greater or equal to 1.
+const new_array_function = (arr1,arr2)=> {
+  const new_array = []
+  new_array.push(arr1[1],arr2[1])
+  return new_array
+}
+
+console.log(new_array_function([1,2,3],[4,5,6]))
+
+
+// 76. Write a JavaScript program to create a new array taking the first and last elements from a given array of integers 
+//and length must be greater or equal to 1.
+
+const new_array_function2 =(array) => {
+  if(array.length >= 1){
+    const new_array = []
+    new_array.push(array[0],array[array.length-1])
+  return new_array}
+  else false
+}
+
+console.log(new_array_function2([1,2,3,5,4]))
 
 // 77. Write a JavaScript program to test whether an array of integers of length 2 contains 1 or a 3.
+
+const test_functtion2 = (array)=>{
+  
+
+}
 
 // 78. Write a JavaScript program to test whether an array of integers of length 2 does not contain 1 or a 3.
 
