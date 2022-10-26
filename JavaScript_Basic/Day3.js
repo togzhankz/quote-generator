@@ -320,13 +320,23 @@ console.log(new_array_function2([1,2,3,5,4]))
 
 // 77. Write a JavaScript program to test whether an array of integers of length 2 contains 1 or a 3.
 
-const test_functtion2 = (array)=>{
-  
-
+const test_function2 = (array)=>{
+  if (array.includes(1)|| array.includes(3)){
+    return true
+  } else return false
 }
+
+console.log(test_function2([2,4,4]))
 
 // 78. Write a JavaScript program to test whether an array of integers of length 2 does not contain 1 or a 3.
 
+const test_function_arr = (array)=>{
+  if (array.indexOf(1) == -1 && array.indexOf(3)== -1){
+    return true
+  } else return false
+}
+
+console.log(test_function_arr([7,9]))
 // 79. Write a JavaScript program to test whether a given array of integers contains 30 and 40 twice. The array length should be 0, 1, or 2.
 
 // 80. Write a JavaScript program to swap the first and last elements of a given array of integers. The array length should be at least 1.
