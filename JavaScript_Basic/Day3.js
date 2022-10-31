@@ -575,8 +575,59 @@ console.log(max_difference([1, 2, 3, 18, 9]))
 console.log(max_difference([13, 2, 3, 8, 9]))
 
 // 93. Write a JavaScript program to find the maximal difference among all possible pairs of a given array of integers.
+const array_max_diff = arr => {
+
+  let max_result = 0;
+
+  for(let i=0;i<arr.length;i++)
+     {
+      for(let k=0; k!=i && k<arr.length; k++)
+      {
+          const diff = Math.abs(arr[i]-arr[k]);
+          max_result = Math.max(max_result, diff);
+      }
+  }
+  return max_result;
+}
+console.log(array_max_diff([1, 2, 3, 8, 9]))
+console.log(array_max_diff([1, 2, 3, 18, 9]))
+console.log(array_max_diff([13, 2, 3, 8, 9]))
+
+const array_max_diff2 = arr => {
+
+  let max_result = 0;
+
+  for(let i=0;i<arr.length;i++)
+  {
+    for (let k = 0; k < array.length; k++) {
+      const diff = Math.abs(arr[i]-arr[k]);
+      max_result = Math.max(max_result, diff);
+      
+    }
+  }
+  return max_result;
+}
+console.log(array_max_diff2([1, 2, 3, 8, 9]))
+
 
 // 94. Write a JavaScript program to find the number which appears most in a given array of integers.
+function array_element_mode(arr) {
+  const ctr = [];
+  let ans = 0;
+
+  for(var i = 0; i < 10; i++) {
+    ctr.push(0);
+  }
+  for(var i = 0; i < arr.length; i++) {
+    ctr[arr[i] - 1]++;
+    if(ctr[arr[i] - 1] > ctr[ans]) {
+      ans = arr[i] - 1;
+    }
+  }
+  return ans + 1;
+}
+console.log(array_element_mode([1, 2, 3, 2, 2, 8, 1, 9]))
+
 
 // 95. Write a JavaScript program to replace all the numbers with a specified number of a given array of integers.
 
