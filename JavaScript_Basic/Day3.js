@@ -534,9 +534,45 @@ const  Kth_greatest_in_array = (arr, k)=> {
 console.log(Kth_greatest_in_array([1,2,6,4,5], 3))
 console.log(Kth_greatest_in_array([-10,-25,-47,-36,0], 1))
 
-// 91. Write a JavaScript program to find the maximum possible sum of some of its k consecutive numbers (numbers that follow each other in order.) of a given array of positive integers.
+// 91. Write a JavaScript program to find the maximum possible sum of some of its k consecutive numbers 
+//(numbers that follow each other in order.) of a given array of positive integers.
+
+const  array_max_consecutive_sum = (nums, k)=> {
+  let result = 0;
+  let temp_sum = 0;
+  for (var i = 0; i < k - 1; i++) {
+    temp_sum += nums[i];
+  }
+  for (var i = k - 1; i < nums.length; i++) {
+    temp_sum += nums[i];
+    if (temp_sum > result) {
+      result = temp_sum;
+    }
+    temp_sum -= nums[i - k + 1];
+  }
+  return result;
+}
+
+console.log(array_max_consecutive_sum([1, 2, 3, 14, 5], 2))
+console.log(array_max_consecutive_sum([2, 4, 5, 9], 3))
+console.log(array_max_consecutive_sum([9, 3, 5, 1, 7], 2))
 
 // 92. Write a JavaScript program to find the maximal difference between any two adjacent elements of a given array of integers.
+
+const max_difference = arr=> {
+	let max = -1;
+    let temp;
+	for (let i = 0; i < arr.length - 1; i++)
+      {
+		temp = Math.abs(arr[i] - arr[i + 1]);
+		max = Math.max(max, temp);
+	  }
+	return max;
+}
+
+console.log(max_difference([1, 2, 3, 8, 9]))
+console.log(max_difference([1, 2, 3, 18, 9]))
+console.log(max_difference([13, 2, 3, 8, 9]))
 
 // 93. Write a JavaScript program to find the maximal difference among all possible pairs of a given array of integers.
 
