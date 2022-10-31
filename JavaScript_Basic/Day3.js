@@ -500,10 +500,39 @@ return false;
 
 console.log(similar_check(8,9,4))
 
-// 89. Write a JavaScript program to check whether it is possible to replace $ in a given expression x $ y = z with one of the four signs +, -, * or / to obtain a correct expression.
+// 89. Write a JavaScript program to check whether
+// it is possible to replace $ in a given expression x $ y = z with one of the four signs +, -, * or / to obtain a correct expression.
 // For example x = 10, y = 30 and z = 300, we can replace $ with a multiple operator (*) to obtain x * y = z
 
+const  check_arithmetic_Expression = (x, y, z) => {
+  return x + y == z || x * y == z || x / y == z || x - y == z;
+}
+
+console.log(check_arithmetic_Expression(10, 20, 30))
+
+
 // 90. Write a JavaScript program to find the kth greatest element of a given array of integers
+const  Kth_greatest_in_array = (arr, k)=> {
+
+  for (let i = 0; i < k; i++) {
+    let max_index = i;
+    const tmp = arr[i];
+
+    for (let j = i + 1; j < arr.length; j++) {
+      if (arr[j] > arr[max_index]) {
+        max_index = j;
+      }
+    }
+
+    arr[i] = arr[max_index];
+    arr[max_index] = tmp;
+  }
+
+  return arr[k - 1];
+}
+
+console.log(Kth_greatest_in_array([1,2,6,4,5], 3))
+console.log(Kth_greatest_in_array([-10,-25,-47,-36,0], 1))
 
 // 91. Write a JavaScript program to find the maximum possible sum of some of its k consecutive numbers (numbers that follow each other in order.) of a given array of positive integers.
 
