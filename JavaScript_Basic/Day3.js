@@ -382,10 +382,50 @@ console.log(add_without_carry(200, 900))
 
 // 83. Write a JavaScript to find the longest string from a given array of strings.
 
+const longest_string = (array) =>{
+  let max_length = array[0].length
+  let ans = array[0]
+  for(let i = 1; i< array.length; i++){
+    const maxi = array[i].length
+    if(maxi > max_length){
+      ans = array[i]
+      max_length = maxi
+    }
+  }
+  return ans;
+}
+console.log(longest_string(["khavfffal","daniekd","appppp"]))
 // 84. Write a JavaScript to replace each character of a given string by the next one in the English alphabet.
 // Note: 'a' will be replace by 'b' or 'z' would be replaced by 'a'.
 
-// 85. Write a JavaScript code to divide a given array of positive integers into two parts. First element goes to first part, second element goes to second part, and third element goes to first part and so on. Now compute the sum of two parts and store into an array of size two.
+const alphabet_char_Shift = (str)=> {
+  const all_chars = str.split("");
+  for(let i = 0; i < all_chars.length; i++) {
+    let n = all_chars[i].charCodeAt() - 'a'.charCodeAt();
+    n = (n + 1) % 26; 
+    all_chars[i] = String.fromCharCode(n + 'a'.charCodeAt());
+  }
+  return all_chars.join("");
+}
+
+console.log(alphabet_char_Shift("abcdxyz"))
+
+
+// 85. Write a JavaScript code to divide a given array of positive integers into two parts. 
+//First element goes to first part, second element goes to second part, and third element goes to first part and so on. 
+//Now compute the sum of two parts and store into an array of size two.
+const  alternate_Sums = (arr) =>  {
+  const result = [0, 0];
+  for(let i = 0; i < arr.length; i++) 
+  {
+    if(i % 2) result[1] += arr[i];
+    else
+      result[0] += arr[i];
+  }
+  return result
+}
+
+console.log(alternate_Sums([1, 3, 6, 2, 5, 10]))
 
 // 86. Write a JavaScript program to find the types of a given angle.
 // Types of angles:
@@ -393,6 +433,26 @@ console.log(add_without_carry(200, 900))
 // Right angle: An 90 degree angle.
 // Obtuse angle: An angle between 90 and 180 degrees.
 // Straight angle: A 180 degree angle.
+
+
+
+
+const angle = 123;
+switch (true) {
+  case angle>0 && angle < 90:
+    console.log("Acute");
+    break;
+  case angle == 90:
+    console.log("Right");
+    break;
+  case angle>90 && angle < 180:
+    console.log("Obtuse");
+    break;
+  case angle == 180:
+    console.log("Straight");
+    break;
+}
+
 
 // 87. Write a JavaScript program to check whether two arrays of integers of same length are similar or not. The arrays will be similar if one array can be obtained from another array by swapping at most one pair of elements.
 
