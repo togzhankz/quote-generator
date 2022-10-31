@@ -631,8 +631,28 @@ console.log(array_element_mode([1, 2, 3, 2, 2, 8, 1, 9]))
 
 // 95. Write a JavaScript program to replace all the numbers with a specified number of a given array of integers.
 
+const array_element_replace = (arr, old_value, new_value) => {
+  for (let i = 0; i < arr.length; i++) {
+    if (arr[i] === old_value) {
+      arr[i] = new_value;
+    }
+  }
+  return arr;
+}
+num = [1, 2, 3, 2, 2, 8, 1, 9];
+console.log(`Original Array: ${num}`);
+console.log(array_element_replace(num, 2, 5));
 // 96. Write a JavaScript program to compute the sum of absolute differences of consecutive numbers of a given array of integers.
 
+const sum_adjacent_difference = arr => {
+	let result = 0;
+	for (let i = 1; i < arr.length; i++) {
+		result += Math.abs(arr[i] - arr[i - 1]);
+	}
+	return result;
+}
+
+console.log(sum_adjacent_difference([1, 2, 3, 2, -5]));
 // 97. Write a JavaScript program to find the shortest possible string which can create a string to make it a palindrome by adding characters to the end of it.
 
 // 98. Write a JavaScript program to switch case of the minimum possible number of letters to make a given string written in the upper case or in the lower case.
