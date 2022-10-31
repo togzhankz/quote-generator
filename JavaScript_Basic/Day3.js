@@ -454,9 +454,51 @@ switch (true) {
 }
 
 
-// 87. Write a JavaScript program to check whether two arrays of integers of same length are similar or not. The arrays will be similar if one array can be obtained from another array by swapping at most one pair of elements.
+// 87. Write a JavaScript program to check whether two arrays of integers of same length are similar or not. 
+//The arrays will be similar if one array can be obtained from another array by swapping at most one pair of elements.
 
-// 88. Write a JavaScript program that takes two integers and a divisor. If the given divisor divides both integers and it does not divide either, then two given integers are similar. Check whether two given integers are similar or not.
+const array_checking = (arra1, arra2) => {
+
+  for(let i = 0; i < arra1.length; i++) {
+    for(let j = i; j < arra1.length; j++) {
+      let result = true;
+      const temp = arra1[i];
+      arra1[i] = arra1[j];
+      arra1[j] = temp;
+      for(let k = 0; k < arra1.length; k++) {
+        if(arra1[k] !== arra2[k]) {
+          result = false;
+          break;
+        }
+      }
+      if(result) {
+        return true;
+      }
+      arra1[j] = arra1[i];
+      arra1[i] = temp;
+    }
+  }
+  return false;
+}
+
+console.log(array_checking([10,20,30], [10,20,30]))
+console.log(array_checking([10,20,30], [30,10,20]))
+console.log(array_checking([10,20,30,40], [10,30,20,40]))
+
+
+// 88. Write a JavaScript program that takes two integers and a divisor. 
+//If the given divisor divides both integers and it does not divide either, then two given integers are similar.
+// Check whether two given integers are similar or not.
+
+const similar_check = (int1,int2, div) => {
+  if((int1 % div === 0 && int2 % div ===0)|| (int1 % div !== 0 && int2 % div !==0)  )
+  
+  {  return true
+}
+return false;
+}
+
+console.log(similar_check(8,9,4))
 
 // 89. Write a JavaScript program to check whether it is possible to replace $ in a given expression x $ y = z with one of the four signs +, -, * or / to obtain a correct expression.
 // For example x = 10, y = 30 and z = 300, we can replace $ with a multiple operator (*) to obtain x * y = z
