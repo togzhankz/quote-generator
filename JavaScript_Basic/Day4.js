@@ -1,8 +1,63 @@
-// 101. Write a JavaScript program to check whether a given string contains only Latin letters and no two uppercase and no two lowercase letters are in adjacent positions. 
+// 101. Write a JavaScript program to check whether a given string contains only Latin letters and 
+//no two uppercase and no two lowercase letters are in adjacent positions. 
+
+const  test_string = input_str => {
+
+const is_lower_case = symbol => {
+    if ('a' <= symbol && symbol <= 'z') {
+      return true;
+    }
+    return false;
+}
+
+const is_upper_case = symbol => {
+    if ('A' <= symbol && symbol <= 'Z') {
+      return true;
+    }
+    return false;
+}
+
+const is_first_char_lower = is_lower_case(input_str[0]);
+const is_first_char_upper = is_upper_case(input_str[0]);
+
+for (let i = 1; i < input_str.length; i++) {
+    if (i % 2) {
+      if (is_lower_case(input_str[i]) === is_first_char_lower ||
+        is_upper_case(input_str[i]) === is_first_char_upper) {
+        return false;
+      }
+    } else {
+      if (is_lower_case(input_str[i]) !== is_first_char_lower ||
+        is_upper_case(input_str[i]) !== is_first_char_upper) {
+        return false;
+      }
+    }
+  }
+  return true
+}
+
+console.log(test_string("hGf"))
+
+
 
 
 // 102. Write a JavaScript program to find the number of inversions of a given array of integers. 
 // Note: Two elements of the array a stored at positions i and j form an inversion if a[i] > a[j] and i < j.
+
+const number_of_InversionsNaive = arr => {
+    let ctr = 0;
+    for (let i = 0; i < arr.length; i++) {
+        for (let j = i + 1; j < arr.length; j++) {
+            if (arr[i] > arr[j]) 
+              ctr++;
+        }
+    }
+    return ctr;
+}
+
+console.log(number_of_InversionsNaive([0, 3, 2, 5, 9]));   
+console.log(number_of_InversionsNaive([1, 5, 4, 3]));   
+console.log(number_of_InversionsNaive([10, 30, 20, -10])); 
 
 
 // 103. Write a JavaScript program to find the maximal number from a given positive integer by deleting exactly one digit of the given number. 
@@ -33,7 +88,7 @@
 // 110. Write a JavaScript program to find the number of even values in sequence before the first occurrence of a given number. 
 
 
-02.11.2022 = Tuesday
+//02.11.2022 = Tuesday
 
 // 111. Write a JavaScript program to check a number from three given numbers where two numbers are equal, find the third one. 
 
@@ -180,4 +235,4 @@
 // 149. Write a JavaScript program to change the capitalization of all letters in a given string.  
 
 
-// 150. Write a JavaScript program to swap pairs of adjacent digits of a given integer of even length.  
+// 150. Write a JavaScript program to swap pairs of adjacent digits of a given integer of even length.
