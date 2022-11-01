@@ -653,10 +653,52 @@ const sum_adjacent_difference = arr => {
 }
 
 console.log(sum_adjacent_difference([1, 2, 3, 2, -5]));
-// 97. Write a JavaScript program to find the shortest possible string which can create a string to make it a palindrome by adding characters to the end of it.
+// 97. Write a JavaScript program to find the shortest possible string which can create a string 
+//to make it a palindrome by adding characters to the end of it.
+
+
+const build_Palindrome = new_str => {
+  let flag;
+  for (let i = new_str.length;; i++) {
+    flag = true;
+    for (var j = 0; j < i - j - 1; j++) {
+      if (i - j - 1 < new_str.length && new_str[j] != new_str[i - j - 1]) {
+        flag = false;
+        break;
+      }
+    }
+    if (flag) {
+      for (var j = new_str.length; j < i; j++) {
+        new_str += new_str[i - j - 1];
+      }
+      return new_str;
+    }
+  }
+}
+
+console.log(build_Palindrome("abcddc"))
+console.log(build_Palindrome("122"))
+
 
 // 98. Write a JavaScript program to switch case of the minimum possible number of letters to make a given string written in the upper case or in the lower case.
 // Fox example "Write" will be write and "PHp" will be "PHP"
+
+const  change_case = new_str => {
+  let x = 0;
+  let y = 0;
+
+  for (let i = 0; i < new_str.length; i++) {
+    if (/[A-Z]/.test(new_str[i])) {
+      x++;
+    } else y++;
+  }
+
+  if (y > x) return new_str.toLowerCase();
+  return new_str.toUpperCase();
+}
+
+console.log(change_case("Write"))
+console.log(change_case("PHp"))
 
 // 99. Write a JavaScript program to check whether it is possible to rearrange characters of a given string in such way that it will become equal to another given string.
 
