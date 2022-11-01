@@ -102,10 +102,52 @@ console.log(different_values([12, 10, 33, 34], 24));
 console.log(different_values([12, 10, 33, 44], 40));
 
 
-// 105. Write a JavaScript program to find the number of times to replace a given number with the sum of its digits until it convert to a single digit number. 
+// 105. Write a JavaScript program to find the number of times to replace a given number with the sum of its digits 
+//until it convert to a single digit number. 
+
+const digit_to_one =num => {
+
+    const digitSum = num => {
+
+        let digit_sum = 0;
+        while (num) {
+            digit_sum += num % 10;
+            num = Math.floor(num / 10);
+        }
+
+        return digit_sum;
+    };
+
+    let result = 0;
+
+    while (num >= 10) {
+        result += 1;
+        num = digitSum(num);
+    }
+
+    return result;
+}
+
+console.log(digit_to_one(123))
+console.log(digit_to_one(156))
 
 
 // 106. Write a JavaScript program to divide an integer by another integer as long as the result is an integer and return the result. 
+const divide_digi = (num, d)=> {
+    if (d==1)
+      return num;
+    else
+    {
+   while (num % d === 0) {
+     num /= d;
+     }
+ return num;
+    }
+}
+console.log(divide_digit(-12, 2))
+console.log(divide_digit(13, 2))
+console.log(divide_digit(13, 1))
+
 
 
 // 107. Write a JavaScript program to find the number of sorted pairs formed by its elements of a given array of integers such that one element in the pair is divisible by the other one. 
