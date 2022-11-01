@@ -133,7 +133,7 @@ console.log(digit_to_one(156))
 
 
 // 106. Write a JavaScript program to divide an integer by another integer as long as the result is an integer and return the result. 
-const divide_digi = (num, d)=> {
+const divide_digit = (num, d)=> {
     if (d==1)
       return num;
     else
@@ -150,14 +150,45 @@ console.log(divide_digit(13, 1))
 
 
 
-// 107. Write a JavaScript program to find the number of sorted pairs formed by its elements of a given array of integers such that one element in the pair is divisible by the other one. 
+// 107. Write a JavaScript program to find the number of sorted pairs formed by its elements of a given array of integers 
+//such that one element in the pair is divisible by the other one. 
 // For example - The output of [1, 3, 2] ->2 - (1,3), (1,2).
 // The output of [2, 4, 6] -> 2 - (2,4), (2,6)
 // The output of [2, 4, 16] -> 3 - (2,4), (2,16), (4,16)
 
+const arr_pairs = arr => {
+    var result = 0;
+    for (var i = 0; i < arr.length; i++)
+        {
+        for (var j = i + 1; j < arr.length; j++)
+            {
+              if (arr[i] % arr[j] === 0 || arr[j] % arr[i] === 0)
+                {
+                result++;
+                }
+         }
+      }
+    return result;
+}
+console.log(arr_pairs([1,2,3]))
+console.log(arr_pairs([2,4,6]))
+console.log(arr_pairs([2,4,16]))
+
+
 
 // 108. Write a JavaScript program to create the dot products of two given 3D vectors. 
 // Note: The dot product is the sum of the products of the corresponding entries of the two sequences of numbers.
+
+const dot_product =(vector1, vector2) => {
+    let result = 0;
+    for (let i = 0; i < 3; i++) {
+      result += vector1[i] * vector2[i];
+    }
+    return result;
+  }
+  console.log(dot_product([1,2,3], [1,2,3]))
+  console.log(dot_product([2,4,6], [2,4,6]))
+  console.log(dot_product([1,1,1], [0,1,-1]))
 
 
 // 109. Write a JavaScript program to sort an array of all prime numbers between 1 and a given integer. 
