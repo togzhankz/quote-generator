@@ -700,6 +700,39 @@ const  change_case = new_str => {
 console.log(change_case("Write"))
 console.log(change_case("PHp"))
 
-// 99. Write a JavaScript program to check whether it is possible to rearrange characters of a given string in such way that it will become equal to another given string.
+// 99. Write a JavaScript program to check whether it is possible to rearrange characters of a given string in 
+//such way that it will become equal to another given string.
+
+const rearrangement_characters = (str1, str2) => {
+  const first_set = str1.split('');
+  const second_set = str2.split('');
+  let result = true;
+
+  first_set.sort();
+  second_set.sort();
+
+  for (let i = 0; i < Math.max(first_set.length, second_set.length); i++) {
+    if (first_set[i] !== second_set[i]) {
+      result = false;
+    }
+  }
+
+  return result;
+}
+
+console.log(rearrangement_characters("xyz", "zyx"))
+console.log(rearrangement_characters("xyz", "zyp"))
 
 // 100. Write a JavaScript program to check whether there is at least one element which occurs in two given sorted arrays of integers.
+
+const occurs_in_sorted_array = (array1,array2) => {
+
+  for (let i = 0; i<array1.length; i++){
+      if(array2.includes(array1[i]))
+      return true
+
+  }
+  return false
+}
+
+console.log(occurs_in_sorted_array([1,3,5],[5,4,6]))
