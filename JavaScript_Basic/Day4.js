@@ -193,9 +193,46 @@ const dot_product =(vector1, vector2) => {
 
 // 109. Write a JavaScript program to sort an array of all prime numbers between 1 and a given integer. 
 
+const  sort_prime = (num) => {
+    const prime_num1 = [];
+    const prime_num2 = [];
+    for (var i = 0; i <= num; i++) {
+      prime_num2.push(true);
+    }
+    for (var i = 2; i <= num; i++) {
+      if (prime_num2[i]) {
+        prime_num1.push(i);
+        for (let j = 1; i * j <= num; j++) {
+          prime_num2[i * j] = false;
+        }
+      }
+    }
+  
+    return prime_num1;
+  }
+  
+  console.log(sort_prime(5))
+  console.log(sort_prime(11))
+  console.log(sort_prime(19))
 
 // 110. Write a JavaScript program to find the number of even values in sequence before the first occurrence of a given number. 
+const find_numbers = (arr_num, num)=> {
+    let result = 0;
+    for (let i = 0; i < arr_num.length; i++)
+    {
+        if (arr_num[i] % 2 === 0 && arr_num[i] !== num) {
+            result++;
+        }
+        if (arr_num[i] === num) 
+        {
+            return result;
+        }
+    }
+    return -1;
+}
 
+console.log(find_numbers([1,2,3,4,5,6,7,8], 5))
+console.log(find_numbers([1,3,5,6,7,8], 6))
 
 //02.11.2022 = Tuesday
 
