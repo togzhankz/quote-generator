@@ -238,14 +238,56 @@ console.log(find_numbers([1,3,5,6,7,8], 6))
 
 // 111. Write a JavaScript program to check a number from three given numbers where two numbers are equal, find the third one. 
 
+const check_if_equal = (num1,num2,num3)=> {
+    if(num1 === num2 || num1 === num3 || num2 === num3) return true
+        else 
+        {return false}
+}
 
+console.log(check_if_equal(1,2,4))
 // 112. Write a JavaScript program to find the number of trailing zeros in the decimal representation of the factorial of a given number. 
+const  trailing_zeros_factorial = n =>  {
+    let result = 0;
+    for (let i = 5; i <= n; i += 5) {
+        let num = i;
+        while (num % 5 === 0) {
+            num /= 5;
+            result++;
+        }
+    }
+    return result;
+}
+
+console.log(trailing_zeros_factorial(8))
+console.log(trailing_zeros_factorial(9))
+console.log(trailing_zeros_factorial(10))
 
 
 // 113. Write a JavaScript program to calculate the sum of n + n/2 + n/4 + n/8 + .... where n is a positive integer and all divisions are integer. 
 
+const calculate_sum = n => {
+    sum = Math.floor(n + n/2 + n/4 + n/8)
+    return sum
+}
 
-// 114. Write a JavaScript program to check whether a given string represents a correct sentence or not. A string is considered correct sentence if it starts with the capital letter and ends with a full stop (.). 
+console.log(calculate_sum(26))
+
+function int_sum(num) {
+    let s_sum = 0;
+    while (num > 0) {
+        s_sum += num;
+        num = Math.floor(num / 2);
+    }
+    return s_sum;
+}
+console.log(int_sum(26))
+
+console.log(Math.floor(1/2))
+// 114. Write a JavaScript program to check whether a given string represents a correct sentence or not. 
+//A string is considered correct sentence if it starts with the capital letter and ends with a full stop (.)
+
+
+
 
 
 // 115. Write a JavaScript program to check whether a matrix is a diagonal matrix or not. In linear algebra, a diagonal matrix is a matrix in which the entries outside the main diagonal are all zero (the diagonal from the upper left to the lower right). 
