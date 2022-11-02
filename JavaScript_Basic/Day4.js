@@ -286,9 +286,12 @@ console.log(Math.floor(1/2))
 // 114. Write a JavaScript program to check whether a given string represents a correct sentence or not. 
 //A string is considered correct sentence if it starts with the capital letter and ends with a full stop (.)
 
-
-
-
+const is_correct_Sentence = input_str => {
+    var first_char = input_str[0];
+    var last_char = input_str[input_str.length - 1];
+    return /[A-Z]/.test(first_char) && last_char == "."
+}
+console.log(is_correct_Sentence("This tool will help you write better English and efficiently corrects texts."));
 
 // 115. Write a JavaScript program to check whether a matrix is a diagonal matrix or not. In linear algebra, a diagonal matrix is a matrix in which the entries outside the main diagonal are all zero (the diagonal from the upper left to the lower right). 
 // Example:
