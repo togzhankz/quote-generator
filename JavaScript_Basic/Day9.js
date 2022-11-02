@@ -1,3 +1,4 @@
+07.11.2022
 // 209. Write a JavaScript program to get a list of elements that exist in both arrays, using a provided comparator function. 
 
 

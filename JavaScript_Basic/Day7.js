@@ -1,3 +1,4 @@
+05.11.2022
 // 101. Write a JavaScript program to return the object associating the properties to the values of a given array of valid property identifiers and an array of values. 
 
 

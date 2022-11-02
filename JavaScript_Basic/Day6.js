@@ -1,3 +1,4 @@
+04.11.2022
 // 51. Write a JavaScript program to get an object containing the parameters of the current URL. 
 
 

@@ -1,3 +1,4 @@
+17.11.2022
 //JS Object
 
 // 1. Write a JavaScript program to list the properties of a JavaScript object. 

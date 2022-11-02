@@ -1,3 +1,4 @@
+15.11.2022
 // Validation with Regular expression
 
 // 1. Write a JavaScript program to test the first character of a string is uppercase or not. 

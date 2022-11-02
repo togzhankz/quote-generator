@@ -1,3 +1,4 @@
+12.11.2022
 //JS ARRAYS
 
 // 1. Write a JavaScript function to check whether an `input` is an array or not. 

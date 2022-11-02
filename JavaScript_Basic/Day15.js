@@ -1,4 +1,4 @@
-//JS date
+13.11.2022
 
 // 1. Write a JavaScript function to check whether an `input` is a date object or not. 
 
