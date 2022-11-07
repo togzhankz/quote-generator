@@ -367,8 +367,7 @@ console.log(r)
 const identityMatrix = (U)=> {
     for(let i = 0; i < U.length; i++){
         for ( let j = 0; j< U.length; j++){
-            console.log({i,j, name:U[i][j]})
-            if( (i===j && U[i][j]!==1)||(i!==j && U[i][j] !==0)  ){
+            if( (i===j && U[i][j]!==1)  || (i!==j && U[i][j] !==0)  ){
                 return false
             }
         }
@@ -380,6 +379,9 @@ console.log(identityMatrix([[1, 0, 0], [0, 1, 0], [0, 0, 1]]))
 
 // 118. Write a JavaScript program to check whether a given number is in a given range. 
 
+const rangeFunction = (num, start,end)=> num > start && num < end;
+
+console.log(rangeFunction(3,4,5))
 
 // 119. Write a JavaScript program to check whether a given integer has an increasing digits sequence. 
 
