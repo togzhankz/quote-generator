@@ -315,9 +315,39 @@ console.log(is_diagonal_matrix([[1, 0, 0], [0, 2, 0], [0, 0, 5] ]));
 console.log(is_diagonal_matrix([[1, 0, 0], [0, 2, 3], [0, 0, 3] ]));
 
 
-// 116. Write a JavaScript program to find all the possible options to replace the hash in a string (Consists of digits and one hash (#)) with a digit to produce an integer divisible by 3. 
+// 116. Write a JavaScript program to find all the possible options to replace the hash in a string 
+//(Consists of digits and one hash (#)) with a digit to produce an integer divisible by 3. 
 // For a string "2*0", the output should be : ["210", "240", "270"]
 
+
+
+
+const hashThree = (str) => {
+    const left = '0'. charCodeAt();
+    const right = '9'.charCodeAt();
+    digitSum = 0;
+    stringArray = str.split('')
+    maskedData = []
+    hash = -1
+    for (let i = 0; i< stringArray.length; i++)
+    if (left <= stringArray[i].charCodeAt() && right >= stringArray[i].charCodeAt()){
+        digitSum += stringArray[i].charCodeAt() - left
+    }
+    else {
+        hash = i
+    }
+
+for (var i = 0; i < 10; i++) {
+    if ((digitSum + i) % 3 === 0) {
+      stringArray[hash] = String.fromCharCode(left + i);
+      maskedData.push(stringArray.join(''));
+    }
+  }
+
+  return maskedData;
+}
+
+console.log(hashThree("2#9"))
 
 // 117. Write a JavaScript program to check whether a given matrix is an identity matrix. 
 // Note: In linear algebra, the identity matrix, or sometimes ambiguously called a unit matrix, of size n is the n ? n square matrix with ones on the main diagonal and zeros elsewhere.
