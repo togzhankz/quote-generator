@@ -344,16 +344,39 @@ for (var i = 0; i < 10; i++) {
     }
   }
 
-  return maskedData;
+  return maskedData  ;
 }
 
-console.log(hashThree("2#9"))
+console.log(hashThree("3#0"))
+
+const b= (digitSum + 1) % 3
+
+const c = String.fromCharCode(48)
+
+console.log(c)
+
+const r = "".charCodeAt()
+console.log(r)
 
 // 117. Write a JavaScript program to check whether a given matrix is an identity matrix. 
-// Note: In linear algebra, the identity matrix, or sometimes ambiguously called a unit matrix, of size n is the n ? n square matrix with ones on the main diagonal and zeros elsewhere.
+// Note: In linear algebra, the identity matrix, or sometimes ambiguously called a unit matrix, 
+//of size n is the n ? n square matrix with ones on the main diagonal and zeros elsewhere.
 // [[1, 0, 0], [0, 1, 0], [0, 0, 1]] -> true
 // [[1, 0, 0], [0, 1, 0], [1, 0, 1]] -> false
 
+const identityMatrix = (U)=> {
+    for(let i = 0; i < U.length; i++){
+        for ( let j = 0; j< U.length; j++){
+            console.log({i,j, name:U[i][j]})
+            if( (i===j && U[i][j]!==1)||(i!==j && U[i][j] !==0)  ){
+                return false
+            }
+        }
+    }
+    return true
+}
+
+console.log(identityMatrix([[1, 0, 0], [0, 1, 0], [0, 0, 1]]))
 
 // 118. Write a JavaScript program to check whether a given number is in a given range. 
 
