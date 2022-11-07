@@ -385,6 +385,16 @@ console.log(rangeFunction(3,4,5))
 
 // 119. Write a JavaScript program to check whether a given integer has an increasing digits sequence. 
 
+const sequenceDigit = (num) => {
+    str = num.toString()
+    array = str.split('')
+    for(let i = 0; i < array.length; i++){
+        if(array[i]> array[i+1]) return false
+    }
+    return true
+}
+
+console.log(sequenceDigit(645))
 
 // 120. Write a JavaScript program to check whether a point lies strictly inside a given circle. 
 // Input:
