@@ -402,7 +402,9 @@ console.log(sequenceDigit(645))
 // Radius of circle: r
 // Point inside a circle (a, b)
 
+const isInsideCircle = (pointX, pointY, radius,centerX, centerY) => Math.sqrt(Math.pow(centerX - pointX,2)+ Math.pow(centerY-pointY,2)) < radius
 
+console.log(isInsideCircle(3,2,3,6,2))
 // 121. Write a JavaScript program to check whether a given matrix is lower triangular or not. 
 // Note: A square matrix is called lower triangular if all the entries above the main diagonal are zero.
 
