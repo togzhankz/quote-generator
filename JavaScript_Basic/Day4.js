@@ -445,7 +445,15 @@ console.log(sequenceIncDec([7,6,5,9]))
 
 // 123. Write a JavaScript program to find whether the members of a given array of integers is a permutation of numbers from 1 to a given integer. 
 
+const isPermutation = (array, n) => {
+    for (let i = 0; i< n; i++){
+        if(!(array.includes(i+1)))
+        return false
+    }
+    return true
+}
 
+console.log(isPermutation([1,2,3,9,5,6,7],7))
 // 124. Write a JavaScript program to create the value of NOR of two given booleans. 
 // Note: In boolean logic, logical nor or joint denial is a truth-functional operator which produces a result that is the negation of logical or. That is, a sentence of the form (p NOR q) is true precisely when neither p nor q is true - i.e. when both of p and q are false
 // Sample Example:
