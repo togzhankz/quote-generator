@@ -455,10 +455,20 @@ const isPermutation = (array, n) => {
 
 console.log(isPermutation([1,2,3,9,5,6,7],7))
 // 124. Write a JavaScript program to create the value of NOR of two given booleans. 
-// Note: In boolean logic, logical nor or joint denial is a truth-functional operator which produces a result that is the negation of logical or. That is, a sentence of the form (p NOR q) is true precisely when neither p nor q is true - i.e. when both of p and q are false
+// Note: In boolean logic, logical nor or joint denial is a truth-functional operator which produces 
+//a result that is the negation of logical or. That is, a sentence of the form (p NOR q) is true precisely 
+//when neither p nor q is true - i.e. when both of p and q are false
 // Sample Example:
-// For x = true and y = false, the output should be logical_Nor(x, y) = false; For x = false and y = false, the output should be logical_Nor(x, y) = true.
+// For x = true and y = false, the output should be logical_Nor(x, y) = false; For x = false and y = false, 
+//the output should be logical_Nor(x, y) = true.
 
+
+const logical_Nor = (x,y) => {
+    return (!(x === y)) 
+
+}
+
+console.log(logical_Nor(true,true))
 
 // 125. Write a JavaScript program to find the longest string from a given array. 
 
