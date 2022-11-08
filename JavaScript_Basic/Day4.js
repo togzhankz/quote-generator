@@ -515,11 +515,36 @@ const reverseBinary = (int) => {
     return decimal
 }
 
-console.log(reverseBinary(14))
+console.log(reverseBinary(234))
 
 // 128. Write a JavaScript program to find the smallest round number that is not less than a given value. 
-// Note: A round number is informally considered to be an integer that ends with one or more zeros.[3] So, 590 is rounder than 592, but 590 is less round than 600.
+// Note: A round number is informally considered to be an integer that ends with one or more zeros.[3] 
+//So, 590 is rounder than 592, but 590 is less round than 600.
 
+
+// const hashThree = (str) => {
+//     const left = '0'. charCodeAt();
+//     const right = '9'.charCodeAt();
+//     digitSum = 0;
+//     stringArray = str.split('')
+//     maskedData = []
+//     hash = -1
+//     for (let i = 0; i< stringArray.length; i++)
+//     if (left <= stringArray[i].charCodeAt() && right >= stringArray[i].charCodeAt()){
+//         digitSum += stringArray[i].charCodeAt() - left
+//     }
+//     else {
+//         hash = i
+//     }
+
+// for (var i = 0; i < 10; i++) {
+//     if ((digitSum + i) % 3 === 0) {
+//       stringArray[hash] = String.fromCharCode(left + i);
+//       maskedData.push(stringArray.join(''));
+
+const roundNearest = (number) => result = (number - (number % 10))+ 10;
+
+console.log(roundNearest(593))
 
 // 129. Write a JavaScript program to find the smallest prime number strictly greater than a given number. 
 
