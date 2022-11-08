@@ -472,6 +472,19 @@ console.log(logical_Nor(true,true))
 
 // 125. Write a JavaScript program to find the longest string from a given array. 
 
+const longestString = (array) => {
+    const strLength = []
+    for(let i = 0; i < array.length; i++){
+        length = array[i].length
+        strLength.push(length)
+        sorted = strLength.sort()
+            }
+    return Math.max(strLength[strLength.length-1])
+}
+
+console.log(longestString(["apple","pen","pencil"]))
+
+
 
 // 126. Write a JavaScript program to get the largest even number from an array of integers. 
 
@@ -479,7 +492,7 @@ console.log(logical_Nor(true,true))
 // 127. Write a JavaScript program to reverse the order of the bits in a given integer. 
 // 14 -> 00001110 -> 01110000 -> 112
 // 56 -> 00111000 -> 00011100 -> 28
-// 234 -> 11101010 -> 01010111 -> 87
+// 234 -> 11101010 -> 01010111 -`> 87
 
 
 // 128. Write a JavaScript program to find the smallest round number that is not less than a given value. 
