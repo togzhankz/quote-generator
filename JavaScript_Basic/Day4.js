@@ -507,6 +507,16 @@ console.log(largestEven([24,168,4,2]))
 // 234 -> 11101010 -> 01010111 -`> 87
 
 
+const reverseBinary = (int) => {
+    const binary = int.toString(2).padStart(8,'0')
+    revBinary = [...binary].reverse().join("");
+    const decimal = parseInt(revBinary,2)
+    
+    return decimal
+}
+
+console.log(reverseBinary(14))
+
 // 128. Write a JavaScript program to find the smallest round number that is not less than a given value. 
 // Note: A round number is informally considered to be an integer that ends with one or more zeros.[3] So, 590 is rounder than 592, but 590 is less round than 600.
 
