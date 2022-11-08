@@ -428,8 +428,20 @@ console.log(isTriangular(
 ))
 
 
-// 122. Write a JavaScript program to check whether a given array of integers represents either a strictly increasing or a strictly decreasing sequence. 
+// 122. Write a JavaScript program to check whether a given array of integers represents either a 
+//strictly increasing or a strictly decreasing sequence. 
 
+const sequenceIncDec = (array) => {
+    const num_direction = array[1] - array[0];
+    for (var i = 0; i < array.length - 1; i++) {
+        if (num_direction * (array[i + 1] - array[i]) <= 0) {
+            return false;
+        }
+    }
+    return true;
+}
+
+console.log(sequenceIncDec([7,6,5,9]))
 
 // 123. Write a JavaScript program to find whether the members of a given array of integers is a permutation of numbers from 1 to a given integer. 
 
