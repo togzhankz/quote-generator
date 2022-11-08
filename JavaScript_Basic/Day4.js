@@ -488,6 +488,18 @@ console.log(longestString(["apple","pen","pencil"]))
 
 // 126. Write a JavaScript program to get the largest even number from an array of integers. 
 
+const largestEven = (array) => {
+    let max = 0
+    for(let i = 0; i < array.length; i++){
+        if((array[i] % 2 === 0)&& (array[i]> max)){
+            max = array[i]
+        }
+    }
+    // return (even[even.length-1])
+    return max
+}
+
+console.log(largestEven([24,168,4,2]))
 
 // 127. Write a JavaScript program to reverse the order of the bits in a given integer. 
 // 14 -> 00001110 -> 01110000 -> 112
