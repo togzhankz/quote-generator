@@ -654,12 +654,34 @@ console.log(change_char("python"));
 
 // 135. Write a JavaScript program to remove all characters from a given string that appear more than once. 
 
+// 1. Function receives a string
+// 2. Count all the characters
+// 3. Compare characters between each other
+// 4. If they are same: we remove that characters
 
 // 136. Write a JavaScript program to replace the first digit in a string (should contains at least digit) with $ character. 
 
+// 1. Function receives a string with digits
+// 2. We check one by one if there is a digit in a string and replace it with $
 
 // 137. Write a JavaScript program to test whether a given integer is greater than 15 return the given number, otherwise return 15. 
 
+const fifteen = (int) => {
+    if(int< 15) return 15
+    else{
+        return int
+    }
+}
+console.log(fifteen(12))
+
+function test_fifteen(num) 
+{
+    while(num<15){
+        num++;
+    }
+    return num;
+}
+console.log(test_fifteen("12"));
 
 // 138. Write a JavaScript program to reverse the bits of a given 16 bits unsigned short integer. 
 
