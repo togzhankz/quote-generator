@@ -597,6 +597,27 @@ console.log(prefixSum([1,2,3,5,99]))
 
 // 132. Write a JavaScript program to find all distinct prime factors of a given integer. 
 
+const  prime_factors = (num)=> {
+    const is_prime = (num)=> {
+      for (let i = 2; i <= Math.sqrt(num); i++)
+      {
+        if (num % i === 0) return false;
+      }
+      return true;
+    }
+    const result = [];
+    for (let i = 2; i <= num; i++)
+    {
+      while (is_prime(i) && num % i === 0) 
+      {
+        if (!result.includes(i)) result.push(i);
+        num /= i;
+      }
+    }
+    return result;
+  }
+  console.log(prime_factors(100));
+  console.log(prime_factors(101));
 
 // 133. Write a JavaScript program to check whether a given fraction is proper or not. 
 // Note: There are two types of common fractions, proper or improper. When the numerator and the denominator are both positive, the fraction is called proper if the numerator is less than the denominator, and improper otherwise.
