@@ -642,6 +642,12 @@ console.log(change_char("python"));
 
 // 136. Write a JavaScript program to replace the first digit in a string (should contains at least digit) with $ character.
 
+const replaceDigit = (str) => {
+    return str.replace(/[0-9]/, '$');
+}
+
+
+console.log(replaceDigit("2s3"))
 // 1. Function receives a string with digits
 // 2. We check one by one if there is a digit in a string and replace it with $
 
