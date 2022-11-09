@@ -545,8 +545,32 @@ const smallPrime = (num) => {
 
 console.log(smallPrime(5))
 
-// 130. Write a JavaScript program to find the number of even digits in a given integer. 
+// 130. Write a JavaScript program to find the number of even digits in a given integer.
 
+const evenDigits = (int) => {
+    evenDigs = []
+    array = int.toString().split('')
+    for(let i = 0; i< array.length; i++){
+        if(array[i]%2 === 0 || array[i] === 0){
+            evenDigs.push(array[i])
+        }
+    }
+    return evenDigs.length
+}
+
+console.log(evenDigits(7774))
+
+
+const even_digits = (num)=> {
+    var ctr = 0;
+    while (num) {
+      ctr += num % 2 === 0;
+      num = Math.floor(num / 10);
+    }
+    return ctr;
+  }
+  
+  console.log(even_digits(12883));
 
 // 131. Write a JavaScript program to create an array of prefix sums of the given array. 
 // In computer science, the prefix sum, cumulative sum, inclusive scan, or simply scan of a sequence of numbers x0, x1, x2, ... is a second sequence of numbers y0, y1, y2, ..., the sums of prefixes of the input sequence:
