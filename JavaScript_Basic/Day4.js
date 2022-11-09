@@ -522,32 +522,28 @@ console.log(reverseBinary(234))
 //So, 590 is rounder than 592, but 590 is less round than 600.
 
 
-// const hashThree = (str) => {
-//     const left = '0'. charCodeAt();
-//     const right = '9'.charCodeAt();
-//     digitSum = 0;
-//     stringArray = str.split('')
-//     maskedData = []
-//     hash = -1
-//     for (let i = 0; i< stringArray.length; i++)
-//     if (left <= stringArray[i].charCodeAt() && right >= stringArray[i].charCodeAt()){
-//         digitSum += stringArray[i].charCodeAt() - left
-//     }
-//     else {
-//         hash = i
-//     }
-
-// for (var i = 0; i < 10; i++) {
-//     if ((digitSum + i) % 3 === 0) {
-//       stringArray[hash] = String.fromCharCode(left + i);
-//       maskedData.push(stringArray.join(''));
-
 const roundNearest = (number) => result = (number - (number % 10))+ 10;
 
 console.log(roundNearest(593))
 
 // 129. Write a JavaScript program to find the smallest prime number strictly greater than a given number. 
 
+const smallPrime = (num) => {
+    for (let i = num + 1;; i++) {
+        let isPrime = true;
+        for (let d = 2; d * d <= i; d++) {
+            if (i % d === 0) {
+                isPrime = false;
+                break;
+            }
+        }
+        if (isPrime) {
+            return i;
+        }
+    }
+}
+
+console.log(smallPrime(5))
 
 // 130. Write a JavaScript program to find the number of even digits in a given integer. 
 
