@@ -651,6 +651,8 @@ const repeatedChar = (str) => {
 }
 
 console.log(repeatedChar("ttttth"))
+
+
 // 136. Write a JavaScript program to replace the first digit in a string (should contains at least digit) with $ character.
 
 const replaceDigit = (str) => {
@@ -678,6 +680,19 @@ function test_fifteen(num) {
 console.log(test_fifteen("12"));
 
 // 138. Write a JavaScript program to reverse the bits of a given 16 bits unsigned short integer.
+const  sixteen_bits_reverse = (num)=> {
+	var result = 0;
+	for (var i = 0; i < 16; i++) 
+    {
+		result = result * 2 + (num % 2);
+		num = Math.floor(num / 2);
+	}
+	return result;
+}
+console.log(1%2);
+console.log(sixteen_bits_reverse(10));
+console.log(sixteen_bits_reverse(11));
+
 
 // 139. Write a JavaScript program to find the position of a rightmost round number in an array of integers. Returns 0 if there are no round number.
 // Note: A round number is informally considered to be an integer that ends with one or more zeros.
