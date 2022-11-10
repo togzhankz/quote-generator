@@ -710,15 +710,18 @@ console.log(rightmostPos([1,2,3,340,4,3000]))
 
 // 140. Write a JavaScript program to check whether all the digits in a given number are the same or not.
 
-// const isAllSameDigit =number => {
-//     for(let i = 0; i < number.length; i++){
-//         if(number[0] != number[i])
-//             return false;
-//     }
-//     return true;
-// }
+const isAllSameDigit = (num) => {
+    const first = num % 10
+    while(num){
+        if(num%10 !== first) return false
+        num = Math.floor(num/10)
+    }
+    return true
+}
 
-// console.log(isAllSameDigit())
+console.log(isAllSameDigit(332))
+
+console.log(Math.floor(22/10))
 // 141. Write a JavaScript program to find the number of elements which presents in both of the given arrays.
 
 // 142. Write a JavaScript program to simplify a given absolute path for a file in Unix-style.
