@@ -697,6 +697,17 @@ console.log(sixteen_bits_reverse(11));
 // 139. Write a JavaScript program to find the position of a rightmost round number in an array of integers. Returns 0 if there are no round number.
 // Note: A round number is informally considered to be an integer that ends with one or more zeros.
 
+const rightmostPos = (array) => {
+    let pos = 0;
+    for(let i=0; i < array.length; i++){
+        if(array[i] % 10 === 0)
+        pos = array[i]
+    }
+    return pos
+}
+
+console.log(rightmostPos([1,2,3,340,4,3000]))
+
 // 140. Write a JavaScript program to check whether all the digits in a given number are the same or not.
 
 // const isAllSameDigit =number => {
