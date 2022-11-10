@@ -640,16 +640,24 @@ console.log(change_char("python"));
 // 3. Compare characters between each other
 // 4. If they are same: we remove that characters
 
+const repeatedChar = (str) => {
+    const arr = str.split('')
+    const newrr = []
+        for (let i = 0; i < arr.length ; i++) {
+            if(str.indexOf(arr[i])==str.lastIndexOf(arr[i]))
+            newrr.push(arr[i])
+}  
+   return newrr.join("")
+}
+
+console.log(repeatedChar("ttttth"))
 // 136. Write a JavaScript program to replace the first digit in a string (should contains at least digit) with $ character.
 
 const replaceDigit = (str) => {
     return str.replace(/[0-9]/, '$');
 }
-
-
 console.log(replaceDigit("2s3"))
-// 1. Function receives a string with digits
-// 2. We check one by one if there is a digit in a string and replace it with $
+
 
 // 137. Write a JavaScript program to test whether a given integer is greater than 15 return the given number, otherwise return 15.
 
