@@ -789,6 +789,24 @@ console.log(sort_by_string_length(arra))
 // 144. Write a JavaScript program to break an address of an url and put it's part into an array.
 // Note: url structure : ://.org[/] and there may be no part in the address.
 
+const  break_address = (url_add) => {
+    let data = url_add.split("://");
+    const protocol = data[0];
+    data = data[1].split(".com");
+    const domain = data[0];
+    data = data[1].split("/");
+
+    if(data[1]){
+        return [protocol,domain,data[1]]
+    }
+
+    return [protocol,domain]
+}
+
+var url_add = "https://www.w3resource.com/javascript-exercises/"
+console.log(`Original address: ${url_add}`)
+console.log(break_address(url_add))
+
 // 145. Write a JavaScript program to find the maximum integer n such that 1 + 2 + ... + n <= a given integer.
 
 // 146. Write a JavaScript program to compute the sum of cubes of all integer from 1 to a given integer.
