@@ -724,6 +724,21 @@ console.log(isAllSameDigit(332))
 console.log(Math.floor(22/10))
 // 141. Write a JavaScript program to find the number of elements which presents in both of the given arrays.
 
+const inBothArray = (array1,array2)=> {
+    sum = 0
+    for (let i = 0; i < array1.length; i++) {
+        for (let j = 0; j < array2.length; j++) {
+            if (array1[i] === array2[j]){
+                sum++
+            }
+            
+        }
+    }
+    return sum
+}
+
+console.log(inBothArray([1,2,3,4,5,],[1,2,3,5,4]))
+
 // 142. Write a JavaScript program to simplify a given absolute path for a file in Unix-style.
 
 // 143. Write a JavaScript program to sort the strings of a given array of strings in the order of increasing lengths.
@@ -764,7 +779,7 @@ function sumDigitss(string) {
   return sum;
 }
 
-console.log(sumDigitss("f18824d43"));
+// console.log(sumDigitss("f18824d43"));
 
 // 148. Write a JavaScript program to swap two halves of a given array of integers of even length.
 
