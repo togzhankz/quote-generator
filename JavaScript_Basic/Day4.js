@@ -641,25 +641,22 @@ console.log(change_char("python"));
 // 4. If they are same: we remove that characters
 
 const repeatedChar = (str) => {
-    const arr = str.split('')
-    const newrr = []
-        for (let i = 0; i < arr.length ; i++) {
-            if(str.indexOf(arr[i])==str.lastIndexOf(arr[i]))
-            newrr.push(arr[i])
-}  
-   return newrr.join("")
-}
+  const arr = str.split("");
+  const newrr = [];
+  for (let i = 0; i < arr.length; i++) {
+    if (str.indexOf(arr[i]) == str.lastIndexOf(arr[i])) newrr.push(arr[i]);
+  }
+  return newrr.join("");
+};
 
-console.log(repeatedChar("ttttth"))
-
+console.log(repeatedChar("ttttth"));
 
 // 136. Write a JavaScript program to replace the first digit in a string (should contains at least digit) with $ character.
 
 const replaceDigit = (str) => {
-    return str.replace(/[0-9]/, '$');
-}
-console.log(replaceDigit("2s3"))
-
+  return str.replace(/[0-9]/, "$");
+};
+console.log(replaceDigit("2s3"));
 
 // 137. Write a JavaScript program to test whether a given integer is greater than 15 return the given number, otherwise return 15.
 
@@ -680,157 +677,153 @@ function test_fifteen(num) {
 console.log(test_fifteen("12"));
 
 // 138. Write a JavaScript program to reverse the bits of a given 16 bits unsigned short integer.
-const  sixteen_bits_reverse = (num)=> {
-	var result = 0;
-	for (var i = 0; i < 16; i++) 
-    {
-		result = result * 2 + (num % 2);
-		num = Math.floor(num / 2);
-	}
-	return result;
-}
-console.log(1%2);
+const sixteen_bits_reverse = (num) => {
+  var result = 0;
+  for (var i = 0; i < 16; i++) {
+    result = result * 2 + (num % 2);
+    num = Math.floor(num / 2);
+  }
+  return result;
+};
+console.log(1 % 2);
 console.log(sixteen_bits_reverse(10));
 console.log(sixteen_bits_reverse(11));
-
 
 // 139. Write a JavaScript program to find the position of a rightmost round number in an array of integers. Returns 0 if there are no round number.
 // Note: A round number is informally considered to be an integer that ends with one or more zeros.
 
 const rightmostPos = (array) => {
-    let pos = 0;
-    for(let i=0; i < array.length; i++){
-        if(array[i] % 10 === 0)
-        pos = array[i]
-    }
-    return pos
-}
+  let pos = 0;
+  for (let i = 0; i < array.length; i++) {
+    if (array[i] % 10 === 0) pos = array[i];
+  }
+  return pos;
+};
 
-console.log(rightmostPos([1,2,3,340,4,3000]))
+console.log(rightmostPos([1, 2, 3, 340, 4, 3000]));
 
 // 140. Write a JavaScript program to check whether all the digits in a given number are the same or not.
 
 const isAllSameDigit = (num) => {
-    const first = num % 10
-    while(num){
-        if(num%10 !== first) return false
-        num = Math.floor(num/10)
-    }
-    return true
-}
+  const first = num % 10;
+  while (num) {
+    if (num % 10 !== first) return false;
+    num = Math.floor(num / 10);
+  }
+  return true;
+};
 
-console.log(isAllSameDigit(332))
+console.log(isAllSameDigit(332));
 
-console.log(Math.floor(22/10))
+console.log(Math.floor(22 / 10));
 // 141. Write a JavaScript program to find the number of elements which presents in both of the given arrays.
 
-const inBothArray = (array1,array2)=> {
-    sum = 0
-    for (let i = 0; i < array1.length; i++) {
-        for (let j = 0; j < array2.length; j++) {
-            if (array1[i] === array2[j]){
-                sum++
-            }
-            
-        }
+const inBothArray = (array1, array2) => {
+  sum = 0;
+  for (let i = 0; i < array1.length; i++) {
+    for (let j = 0; j < array2.length; j++) {
+      if (array1[i] === array2[j]) {
+        sum++;
+      }
     }
-    return sum
-}
+  }
+  return sum;
+};
 
-console.log(inBothArray([1,2,3,4,5,],[1,2,3,5,4]))
+console.log(inBothArray([1, 2, 3, 4, 5], [1, 2, 3, 5, 4]));
 
 // 142. Write a JavaScript program to simplify a given absolute path for a file in Unix-style.
 function simplify_path(main_path) {
-    const parts = main_path.split('/');
-    const new_path = [];
-    let length = 0;
-    for (var i = 0; i < parts.length; i++) {
-      const part = parts[i];
-      if (part === '.' || part === '' || part === '..') {
-        if (part === '..' && length > 0) {
-          length--;
-        }
-        continue;
+  const parts = main_path.split("/");
+  const new_path = [];
+  let length = 0;
+  for (var i = 0; i < parts.length; i++) {
+    const part = parts[i];
+    if (part === "." || part === "" || part === "..") {
+      if (part === ".." && length > 0) {
+        length--;
       }
-      new_path[length++] = part;
+      continue;
     }
-  
-    if (length === 0) {
-      return '/';
-    }
-  
-    let result = '';
-    for (var i = 0; i < length; i++) {
-      result +=  `/${new_path[i]}` ;
-    }
-  
-    return result;
+    new_path[length++] = part;
   }
-  console.log(simplify_path("/home/var/./www/../html//sql/"));
+
+  if (length === 0) {
+    return "/";
+  }
+
+  let result = "";
+  for (var i = 0; i < length; i++) {
+    result += `/${new_path[i]}`;
+  }
+
+  return result;
+}
+console.log(simplify_path("/home/var/./www/../html//sql/"));
 // 143. Write a JavaScript program to sort the strings of a given array of strings in the order of increasing lengths.
 // Note: Do not change the order if the lengths of two string are same.
 
 function sort_by_string_length(arra) {
-	for (let i = 0; i < arra.length; i++) {
-		for (let j = i + 1; j < arra.length; j++) {
-			if (arra[i].length > arra[j].length) {
-				const m = arra[i];
-				arra[i] = arra[j];
-				arra[j] = m;
-			}
-		}
-	}
-	return arra;
+  for (let i = 0; i < arra.length; i++) {
+    for (let j = i + 1; j < arra.length; j++) {
+      if (arra[i].length > arra[j].length) {
+        const m = arra[i];
+        arra[i] = arra[j];
+        arra[j] = m;
+      }
+    }
+  }
+  return arra;
 }
-var arra = ["xyz","acd","aa","bb","zzz","", "a","b"];
+var arra = ["xyz", "acd", "aa", "bb", "zzz", "", "a", "b"];
 
-console.log(sort_by_string_length(arra))
+console.log(sort_by_string_length(arra));
 
 // 144. Write a JavaScript program to break an address of an url and put it's part into an array.
 // Note: url structure : ://.org[/] and there may be no part in the address.
 
-const  break_address = (url_add) => {
-    let data = url_add.split("://");
-    const protocol = data[0];
-    data = data[1].split(".com");
-    const domain = data[0];
-    data = data[1].split("/");
+const break_address = (url_add) => {
+  let data = url_add.split("://");
+  const protocol = data[0];
+  data = data[1].split(".com");
+  const domain = data[0];
+  data = data[1].split("/");
 
-    if(data[1]){
-        return [protocol,domain,data[1]]
-    }
+  if (data[1]) {
+    return [protocol, domain, data[1]];
+  }
 
-    return [protocol,domain]
-}
+  return [protocol, domain];
+};
 
-var url_add = "https://www.w3resource.com/javascript-exercises/"
-console.log(`Original address: ${url_add}`)
-console.log(break_address(url_add))
+var url_add = "https://www.w3resource.com/javascript-exercises/";
+console.log(`Original address: ${url_add}`);
+console.log(break_address(url_add));
 
 // 145. Write a JavaScript program to find the maximum integer n such that 1 + 2 + ... + n <= a given integer.
 
 const sumn = (val) => {
-    let sn = 0;
-    let i = 0;
-    while (sn <= val) {
-      sn += i++;
-    }
-    return i - 2;
+  let sn = 0;
+  let i = 0;
+  while (sn <= val) {
+    sn += i++;
   }
-  console.log(sumn(11))
-  console.log(sumn(15))
+  return i - 2;
+};
+console.log(sumn(11));
+console.log(sumn(15));
 
 // 146. Write a JavaScript program to compute the sum of cubes of all integer from 1 to a given integer.
 
 const sumOfCubes = (n) => {
-        let sn = 0;
-        for (let i = 1; i <= n; i++) {
-          sn += i ** 3;
-        }
-        return sn;
-      }
-      console.log(sumOfCubes(3))
-      console.log(sumOfCubes(4))
+  let sn = 0;
+  for (let i = 1; i <= n; i++) {
+    sn += i ** 3;
+  }
+  return sn;
+};
+console.log(sumOfCubes(3));
+console.log(sumOfCubes(4));
 
 // 147. Write a JavaScript program to compute the sum of all digits that occur in a given string.
 
@@ -865,23 +858,42 @@ console.log(sumDigitss("f18824d43"));
 // 148. Write a JavaScript program to swap two halves of a given array of integers of even length.
 
 function swapHalf(iarra) {
-    if (((iarra.length)%2)!=0)
-      {
-      return false;
-      }
-  
-    for (let i = 0; i < iarra.length / 2; i++) {
-      const tmp = iarra[i];
-      iarra[i] = iarra[i + iarra.length / 2];
-      iarra[i + iarra.length / 2] = tmp;
-    }
-    return iarra;
+  if (iarra.length % 2 != 0) {
+    return false;
   }
-  
-  console.log(swapHalf([1,2,3,4,5,6]))
-  console.log(swapHalf([1,2,3,4,5,6,7]))
 
+  for (let i = 0; i < iarra.length / 2; i++) {
+    const tmp = iarra[i];
+    iarra[i] = iarra[i + iarra.length / 2];
+    iarra[i + iarra.length / 2] = tmp;
+  }
+  return iarra;
+}
+
+console.log(swapHalf([1, 2, 3, 4, 5, 6]));
+console.log(swapHalf([1, 2, 3, 4, 5, 6, 7]));
 
 // 149. Write a JavaScript program to change the capitalization of all letters in a given string.
+
+const capitalizationString = (str) => {
+  let response = "";
+  for (let i = 0; i < str.length; i++) {
+    // if(str[i] === str[i].toUpperCase() ){
+    //     response = response + str[i].toLowerCase()
+    // }else{
+    //     response = response + str[i].toUpperCase()
+    // }
+
+    // condition? expression:expression
+    response =
+      response +
+      (str[i] === str[i].toUpperCase()
+        ? str[i].toLowerCase()
+        : str[i].toUpperCase());
+  }
+  return response;
+};
+
+console.log(capitalizationString("aPPa"));
 
 // 150. Write a JavaScript program to swap pairs of adjacent digits of a given integer of even length`.
