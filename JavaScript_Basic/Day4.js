@@ -822,6 +822,16 @@ const sumn = (val) => {
 
 // 146. Write a JavaScript program to compute the sum of cubes of all integer from 1 to a given integer.
 
+const sumOfCubes = (n) => {
+        let sn = 0;
+        for (let i = 1; i <= n; i++) {
+          sn += i ** 3;
+        }
+        return sn;
+      }
+      console.log(sumOfCubes(3))
+      console.log(sumOfCubes(4))
+
 // 147. Write a JavaScript program to compute the sum of all digits that occur in a given string.
 
 // [1,2,'a',5]
@@ -850,7 +860,7 @@ function sumDigitss(string) {
   return sum;
 }
 
-// console.log(sumDigitss("f18824d43"));
+console.log(sumDigitss("f18824d43"));
 
 // 148. Write a JavaScript program to swap two halves of a given array of integers of even length.
 
