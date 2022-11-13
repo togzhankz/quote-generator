@@ -864,6 +864,24 @@ console.log(sumDigitss("f18824d43"));
 
 // 148. Write a JavaScript program to swap two halves of a given array of integers of even length.
 
+function swapHalf(iarra) {
+    if (((iarra.length)%2)!=0)
+      {
+      return false;
+      }
+  
+    for (let i = 0; i < iarra.length / 2; i++) {
+      const tmp = iarra[i];
+      iarra[i] = iarra[i + iarra.length / 2];
+      iarra[i + iarra.length / 2] = tmp;
+    }
+    return iarra;
+  }
+  
+  console.log(swapHalf([1,2,3,4,5,6]))
+  console.log(swapHalf([1,2,3,4,5,6,7]))
+
+
 // 149. Write a JavaScript program to change the capitalization of all letters in a given string.
 
 // 150. Write a JavaScript program to swap pairs of adjacent digits of a given integer of even length`.
