@@ -1,3 +1,75 @@
+// 1. Write a JavaScript program to display the current day and time in the following format.
+
+console.clear();
+const currentdate = new Date();
+
+function formatAMPM(date) {
+  const weekday = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ];
+  const datetime = weekday[currentdate.getDay()];
+  var hours = date.getHours();
+  var minutes = date.getMinutes();
+  var ampm = hours >= 12 ? "pm" : "am";
+  hours = hours % 12;
+  hours = hours ? hours : 12; // the hour '0' should be '12'
+  minutes = minutes < 10 ? "0" + minutes : minutes;
+  var strTime = hours + ":" + minutes + " " + ampm;
+  return `Today is: ${datetime}. Current time is: ${strTime}`;
+}
+
+console.log(formatAMPM(currentdate));
+
+// Write a JavaScript program to find the area of a triangle where lengths of the three of its sides are 5, 6, 7. 
+
+const area = (base,height) => {
+  return 1/2*base*height
+}
+
+console.log(area(5,6,7))``
+
+
+//Write a JavaScript program to find 1st January is being a Sunday between 2014 and 2050. 
+
+for (let year = 2014; year <= 2050; year++){
+  const D = new Date(year, 0,1)
+  if (D.getDay() === 0)
+  console.log(`1st January is being a Sunday in ${year}`)
+}
+
+
+//Write a JavaScript program to calculate days left until next Christmas.
+
+// const currentDate = new Date()
+// const christmasDate = new Date(2022,11,25)
+// const dateChristmas =christmasDate.getDate()
+// const dateCurrent = currentDate.getDate()
+// const monthChristmas = christmasDate.getMonth()
+// const monthCurrent = currentDate.getMonth()
+
+// const calculate = (monthChristmas - monthCurrent)*30 + (dateChristmas- dateCurrent)
+// console.log(dateChristmas)
+// console.log(dateCurrent)
+// console.log(monthChristmas)
+// console.log(monthCurrent)
+// console.log(calculate)
+
+
+today=new Date();
+const cmas=new Date(today.getFullYear(), 11, 25);
+if (today.getMonth()==11 && today.getDate()>25) 
+{
+cmas.setFullYear(cmas.getFullYear()+1); 
+}  
+const one_day=1000*60*60*24;
+console.log(`${Math.ceil((cmas.getTime()-today.getTime())/(one_day))} days left until Christmas!`);
+
 //Write a JavaScript program to get the difference between a given number and 13, 
 // if the number is greater than 13 return double the absolute difference.
 // function difference(n)

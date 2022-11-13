@@ -770,6 +770,22 @@ function simplify_path(main_path) {
 // 143. Write a JavaScript program to sort the strings of a given array of strings in the order of increasing lengths.
 // Note: Do not change the order if the lengths of two string are same.
 
+function sort_by_string_length(arra) {
+	for (let i = 0; i < arra.length; i++) {
+		for (let j = i + 1; j < arra.length; j++) {
+			if (arra[i].length > arra[j].length) {
+				const m = arra[i];
+				arra[i] = arra[j];
+				arra[j] = m;
+			}
+		}
+	}
+	return arra;
+}
+var arra = ["xyz","acd","aa","bb","zzz","", "a","b"];
+
+console.log(sort_by_string_length(arra))
+
 // 144. Write a JavaScript program to break an address of an url and put it's part into an array.
 // Note: url structure : ://.org[/] and there may be no part in the address.
 
