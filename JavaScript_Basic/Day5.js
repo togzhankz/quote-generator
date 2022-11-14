@@ -1,8 +1,27 @@
 
-03.11.2022
 // 1. Write a JavaScript program to compare two objects to determine if the first one contains equivalent property values to the second one. 
 
+const object1 = {color: "rede",
+                age: 33}
+const object2 = {color: "red",
+                    age: 36}
 
+const equivalentProperty = (object1,object2) => {
+    if(object1.color === object2.color){
+        return true}
+    else{
+        return false
+    }
+}
+
+console.log(equivalentProperty(object1,object2))
+
+
+const matches = (obj, source) =>
+  Object.keys(source).every(key => obj.hasOwnProperty(key) && obj[key] === source[key]);
+
+  
+console.log(matches({ age: 25, hair: 'long', beard: true }, { hair: 'long', beard: true }));
 
 // 2. Write a JavaScript program to copy a string to the clipboard. 
 
@@ -10,9 +29,77 @@
 
 // 3. Write a JavaScript program to converts a comma-separated values (CSV) string to a 2D array. 
 
+const csv_to_array = (data) =>data.split('\n').map(item => item.split(','))
+
+console.log(csv_to_array(`id,name,price,color,amount
+1,Pen,1,black,100
+2,Eraser,3,white,234
+3,Pen,5,black,368
+4,Eraser,7,white,502
+5,Pen,9,black,636
+6,Eraser,11,white,770
+7,Pen,13,black,904
+8,Eraser,15,white,1038
+9,Pen,17,black,1172
+10,Eraser,19,white,1306
+11,Pen,21,black,1440
+12,Eraser,23,white,1574
+13,Pen,25,black,1708
+14,Eraser,27,white,1842
+15,Pen,29,black,1976
+16,Eraser,31,white,2110
+17,Pen,33,black,2244
+18,Eraser,35,white,2378
+19,Pen,37,black,2512
+20,Eraser,39,white,2646
+21,Pen,41,black,2780
+22,Eraser,43,white,2914`))
 
 
-// 4. Write a JavaScript program to convert a comma-separated values (CSV) string to a 2D array of objects. The first row of the string is used as the title row. 
+// 4. Write a JavaScript program to convert a comma-separated values (CSV) string to a 2D array of objects. 
+// The first row of the string is used as the title row. 
+
+const csv_to_object = (str) =>{
+    const headers = str.slice(0, str.indexOf("\n")).split(',');
+    const rows = str.slice(str.indexOf("\n") + 1).split("\n");
+    const arr = rows.map(row => {
+        const values = row.split(',');
+        const el = headers.reduce((object, header, index)=> {
+          object[header] = values[index];
+          return object;
+        }, {});
+        return el;
+      });
+
+      return arr;
+    }
+//    const firstRow = twodArray.shift()
+console.log(csv_to_object(`id,name,price,color,amount
+1,Pen,1,black,100
+2,Eraser,3,white,234
+3,Pen,5,black,368
+4,Eraser,7,white,502
+5,Pen,9,black,636
+6,Eraser,11,white,770
+7,Pen,13,black,904
+8,Eraser,15,white,1038
+9,Pen,17,black,1172
+10,Eraser,19,white,1306
+11,Pen,21,black,1440
+12,Eraser,23,white,1574
+13,Pen,25,black,1708
+14,Eraser,27,white,1842
+15,Pen,29,black,1976
+16,Eraser,31,white,2110
+17,Pen,33,black,2244
+18,Eraser,35,white,2378
+19,Pen,37,black,2512
+20,Eraser,39,white,2646
+21,Pen,41,black,2780
+22,Eraser,43,white,2914`))
+
+
+
 
 
 
@@ -60,11 +147,13 @@
 
 
 
-// 16. Write a JavaScript function that returns true if the provided predicate function returns true for all elements in a collection, false otherwise. 
+// 16. Write a JavaScript function that returns true if the provided predicate function returns true for all elements 
+//in a collection, false otherwise. 
 
 
 
-// 17. Write a JavaScript program to split values of two given arrays into two groups. If an element in filter is truthy, the corresponding element in the collection belongs to the first group; otherwise, it belongs to the second group. 
+// 17. Write a JavaScript program to split values of two given arrays into two groups. If an element in filter is truthy, 
+//the corresponding element in the collection belongs to the first group; otherwise, it belongs to the second group. 
 
 
 
@@ -164,7 +253,8 @@
 
 
 
-// 42. Write a JavaScript program to get a customized coalesce function that returns the first argument that returns true from the provided argument validation function. 
+// 42. Write a JavaScript program to get a customized coalesce function that returns the first argument that 
+//returns true from the provided argument validation function. 
 
 
 
@@ -176,7 +266,8 @@
 
 
 
-// 45. Write a JavaScript program to split values into two groups, if an element in filter is truthy, the corresponding element in the collection belongs to the first group; otherwise, it belongs to the second group. 
+// 45. Write a JavaScript program to split values into two groups, if an element in filter is truthy, 
+//the corresponding element in the collection belongs to the first group; otherwise, it belongs to the second group. 
 
 
 
@@ -196,5 +287,10 @@
 
 
 
-// 50. Write a JavaScript program to convert an integer to a suffixed string, adding am or pm based on its value. 
+// 50. Write a JavaScript program to convert an integer to a suffixed string, adding am or pm based on its value.
+
+
+
+//51
+
 
